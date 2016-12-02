@@ -34,6 +34,8 @@ export class VehicleModelsComponent implements OnInit {
 
   protected getManufacturers()
   {
+    this._selectedVehicle = "";
+    this._selectedYear = "";
     this._manufacturers = this._garageDataService.getManufacturersBySection(this.section);
   }
 
@@ -41,6 +43,8 @@ export class VehicleModelsComponent implements OnInit {
   {
     if(this._selectedManufacturer != "")
     {
+      this._selectedVehicle = "";
+      this._selectedYear = "";
       this._vehicles = this._garageDataService.getVehiclesByManufacturer(this.section, this._selectedManufacturer);
     }
   }
@@ -48,6 +52,7 @@ export class VehicleModelsComponent implements OnInit {
   protected getVehicleYears()
   {
     if(this._selectedManufacturer != "" && this._selectedVehicle != "")
+      this._selectedYear = "";
       this._years = this._garageDataService.getVehicleYears(this.section, this._selectedManufacturer, this._selectedVehicle);
   }
 }
