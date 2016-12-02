@@ -1,18 +1,25 @@
-<header class="container">
-
+<header class="main-header">
+<div class="container">
   <nav class="navbar navbar-light bg-faded navbar-dark bg-inverse">
 
-    <ul class="nav navbar-nav ">
+    <ul class="nav navbar-nav main-menu">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" data-hover="Home" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
       </li>
-      <li app-registration class="nav-item pull-right register"></li>
+      <li class="nav-item pull-right">
+        <a href="#" class="nav-link" data-hover="ГАРАЖ">ГАРАЖ</a>
+      </li>
+      <li class="nav-item pull-right">
+        <a (click)="openRegistrationModal()" href="#" class="nav-link" data-hover="Регистрация">Регистрация</a>
+      </li>
 
     </ul>
 
   </nav>
+
+</div>
 
 </header>

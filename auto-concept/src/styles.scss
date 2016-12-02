@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-$border-radius:          0px !default;
-$border-radius-lg:       0px !default;
-$border-radius-sm:       0px !default;
+
+@import "scss/vars";
+@import "scss/global";
 @import "../node_modules/bootstrap/scss/bootstrap";
