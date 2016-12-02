@@ -1,6 +1,26 @@
+<div class="top">
+  <div class="container">
+    <nav class="navbar">
+      <ul class="nav navbar-nav">
+        <li class="nav-item pull-right">
+          <a href="#" class="nav-link">Войти</a>
+        </li>
+        <li class="nav-item pull-right">
+          <a (click)="openRegistrationModal()" href="#" class="nav-link" data-hover="Регистрация">Регистрация</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
 <header class="main-header">
+
 <div class="container">
-  <nav class="navbar navbar-light bg-faded navbar-dark bg-inverse">
+
+  <nav class="navbar">
+    <a class="navbar-brand" href="#">
+      <img src="/assets/logo.png">
+    </a>
 
     <ul class="nav navbar-nav main-menu">
       <li class="nav-item active">
@@ -12,9 +32,7 @@
       <li class="nav-item pull-right">
         <a href="#" class="nav-link" data-hover="ГАРАЖ">ГАРАЖ</a>
       </li>
-      <li class="nav-item pull-right">
-        <a (click)="openRegistrationModal()" href="#" class="nav-link" data-hover="Регистрация">Регистрация</a>
-      </li>
+
 
     </ul>
 
