@@ -12,6 +12,10 @@ import {RegistrationModule} from "./registration/registration.module";
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContentComponent } from './components/content/content.component';
+import { ChatComponent } from './chat/chat.component';
+import { GarageComponent } from './garage/moduleView/garage.component';
+import {GarageModule} from "./garage/garage.module";
+import {VehicleModelsComponent} from "./garage/vehicle-models/vehicle-models.component";
 import {LeftNavComponent} from "./components/left-nav/left-nav.component";
 
 @NgModule({
@@ -22,6 +26,10 @@ import {LeftNavComponent} from "./components/left-nav/left-nav.component";
     HeaderComponent,
     FooterComponent,
     ContentComponent,
+    ChatComponent,
+    GarageComponent,
+    VehicleModelsComponent
+
     LeftNavComponent
   ],
   imports: [
@@ -30,6 +38,7 @@ import {LeftNavComponent} from "./components/left-nav/left-nav.component";
     HttpModule,
     AppRoutingModule,
     RegistrationModule,
+    GarageModule,
     NgbModule.forRoot()
   ],
   providers: [],
