@@ -1,7 +1,31 @@
-<ul class="list-group row">
-  <li class="list-group-item col-xs-6 btn btn-default" *ngFor="let manufacturer of _data">
-    <a href="javascript:void(0)" (click)="onManufacturerSelected(manufacturer)">
-      {{manufacturer}}
-    </a>
-  </li>
-</ul>
+<div class="vehicle-guide-form">
+  <div class="form-group row">
+    <label for="selectedManufacturer">Марка</label>
+    <select id="selectedManufacturer" class="form-control" [(ngModel)]="_selectedManufacturer" (ngModelChange)="getVehiclesByManufacturer()">
+      <option value="">Выберите Марку</option>
+      <option *ngFor="let manufacturer of _manufacturers" value="{{manufacturer}}">
+        {{manufacturer}}
+      </option>
+    </select>
+  </div>
+
+  <div class="form-group row">
+    <label for="selectedVehicle">Модель</label>
+    <select id="selectedVehicle" class="form-control" [(ngModel)]="_selectedVehicle" (ngModelChange)="getVehicleYears()">
+      <option value="">Выбирите Модель</option>
+      <option *ngFor="let vehicle of _vehicles" value="{{vehicle}}">
+        {{vehicle}}
+      </option>
+    </select>
+  </div>
+
+  <div class="form-group row">
+    <label for="selectedYear">Год Выпуска</label>
+    <select id="selectedYear" class="form-control" [(ngModel)]="_selectedYear">
+      <option value="">Выбирите Год Выпуска</option>
+      <option *ngFor="let year of _years" value="{{year}}">
+        {{year}}
+      </option>
+    </select>
+  </div>
+</div>

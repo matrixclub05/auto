@@ -13,9 +13,14 @@ export class VehicleModelsComponent implements OnInit {
 
   protected STATES = State;
   protected _currentState:State = State.Manufacturer;
-  protected _data:Array<string> = [];
 
-  protected _values:Array<string> = [];
+  protected _manufacturers:Array<string> = [];
+  protected _vehicles:Array<string> = [];
+  protected _years:Array<number> = [];
+
+  protected _selectedManufacturer:string = "";
+  protected _selectedVehicle:string = "";
+  protected _selectedYear:string = "";
 
   constructor(private _garageDataService:GarageDataService)
   {
@@ -24,48 +29,26 @@ export class VehicleModelsComponent implements OnInit {
 
   ngOnInit()
   {
-    this._values = [];
-    this._values.push(this.section);
-    this.updateData(this._values);
+    this.getManufacturers();
   }
 
-
-  protected onManufacturerSelected(data:string)
+  protected getManufacturers()
   {
-    this._values.push(data);
-    
-    this.gotoNextState();
-    
-    this.updateData(this._values);
+    this._manufacturers = this._garageDataService.getManufacturersBySection(this.section);
   }
 
-  protected updateData(values:Array<string>)
+  protected getVehiclesByManufacturer()
   {
-    switch (this._currentState)
+    if(this._selectedManufacturer != "")
     {
-      case State.Manufacturer:
-        this._data = this._garageDataService.getManufacturersBySection(this._values[0]);
-        break;
-      case State.Vehicle:
-        this._data = this._garageDataService.getVehiclesByManufacturer(this._values[0], this._values[1]);
-        break;
-      case State.Year:
-        this._data = this._garageDataService.getVehicleYears(this._values[0], this._values[1], this._values[2]);
-        break;
+      this._vehicles = this._garageDataService.getVehiclesByManufacturer(this.section, this._selectedManufacturer);
     }
   }
-  
-  protected gotoNextState():void
+
+  protected getVehicleYears()
   {
-    switch (this._currentState)
-    {
-      case State.Manufacturer:
-        this._currentState = State.Vehicle;
-        break;
-      case State.Vehicle:
-        this._currentState = State.Year;
-        break;
-    }
+    if(this._selectedManufacturer != "" && this._selectedVehicle != "")
+      this._years = this._garageDataService.getVehicleYears(this.section, this._selectedManufacturer, this._selectedVehicle);
   }
 }
 

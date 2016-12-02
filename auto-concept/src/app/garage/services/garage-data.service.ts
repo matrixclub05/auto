@@ -47,9 +47,9 @@ export class GarageDataService {
     return vehicles;
   }
 
-  public getVehicleYears(section:string, manufacturer:string, modelName:string):Array<string>
+  public getVehicleYears(section:string, manufacturer:string, modelName:string):Array<number>
   {
-    let vehicleYear:Array<any> = null;
+    let vehicleYear:Array<number> = null;
     if(this._sections[section])
     {
       if(this._sections[section][manufacturer])
