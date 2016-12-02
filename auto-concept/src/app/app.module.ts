@@ -12,6 +12,7 @@ import {RegistrationModule} from "./registration/registration.module";
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContentComponent } from './components/content/content.component';
+import {LeftNavComponent} from "./components/left-nav/left-nav.component";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ContentComponent } from './components/content/content.component';
     RegistrationComponent,
     HeaderComponent,
     FooterComponent,
-    ContentComponent
+    ContentComponent,
+    LeftNavComponent
   ],
   imports: [
     BrowserModule,

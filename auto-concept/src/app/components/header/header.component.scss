@@ -1,3 +1,10 @@
 [app-registration] {
   float: right;
 }
+$border: #d43f3a;
+
+.left-nav{
+  border-right-color: $border;
+  border-width: 1px;
+  border-style: solid;
+}
