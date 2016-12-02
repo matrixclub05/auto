@@ -9,12 +9,18 @@ import { ShopComponent } from './shop/shop.component';
 import { RegistrationComponent } from './registration/moduleView/registration.component';
 import { AppRoutingModule } from "./app-routing.module";
 import {RegistrationModule} from "./registration/registration.module";
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ContentComponent } from './components/content/content.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ShopComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    HeaderComponent,
+    FooterComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,

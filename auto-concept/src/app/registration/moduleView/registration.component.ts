@@ -3,7 +3,7 @@ import {RegistrationFlowComponent} from "../registrationFlow/registration-flow.c
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap"
 
 @Component({
-  selector: 'app-registration',
+  selector: '[app-registration]',
   templateUrl: 'registration.component.html',
   styleUrls: ['registration.component.scss']
 })
