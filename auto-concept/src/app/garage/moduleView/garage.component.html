@@ -1,0 +1,9 @@
+<ngb-tabset #t="ngbTabset">
+  <ngb-tab *ngFor="let section of _garageDataService.sectionList" title="{{section}}" id="{{section}}">
+    <template ngbTabContent>
+        <p vehicle-models [section]="section">
+
+        </p>
+    </template>
+  </ngb-tab>
+</ngb-tabset>

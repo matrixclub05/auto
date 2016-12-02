@@ -13,6 +13,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContentComponent } from './components/content/content.component';
 import { ChatComponent } from './chat/chat.component';
+import { GarageComponent } from './garage/moduleView/garage.component';
+import {GarageModule} from "./garage/garage.module";
+import {VehicleModelsComponent} from "./garage/vehicle-models/vehicle-models.component";
 
 @NgModule({
   declarations: [
@@ -21,8 +24,10 @@ import { ChatComponent } from './chat/chat.component';
     RegistrationComponent,
     HeaderComponent,
     FooterComponent,
-    ContentComponent
-    ChatComponent
+    ContentComponent,
+    ChatComponent,
+    GarageComponent,
+    VehicleModelsComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +35,7 @@ import { ChatComponent } from './chat/chat.component';
     HttpModule,
     AppRoutingModule,
     RegistrationModule,
+    GarageModule,
     NgbModule.forRoot()
   ],
   providers: [],
