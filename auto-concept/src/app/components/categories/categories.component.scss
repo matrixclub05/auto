@@ -1,13 +1,30 @@
+.nav-link{
+  line-height: 2em;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+
 
 .category {
+  margin-bottom: 15px;
+
+  &-block {
+    border: 1px solid #E5E5E5;
+    padding: 20px;
+
+  }
   &-title {
     color: #2a2a2a;
     font-size: 18px;
     font-weight: 700;
     font-style: normal;
-    text-transform: none;
     line-height: 1.4em;
     position: relative;
+    text-align: right;
+    text-transform: uppercase;
+
     &::after{
       content: "";
       width: 100%;
@@ -17,5 +34,10 @@
       display: block;
       border-bottom: 2px solid #df1f3d;
     }
+  }
+  &-title-text {
+    color: #fff;
+    display: inline-block;
+    background: #df1f3d;
   }
 }
