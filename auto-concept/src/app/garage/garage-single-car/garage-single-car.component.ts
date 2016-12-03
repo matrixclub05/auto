@@ -1,4 +1,4 @@
-import {Component, OnInit, Input} from '@angular/core';
+import {Component, OnInit, Input, EventEmitter, Output} from '@angular/core';
 import {CarData} from "../../global-services/data-objects/CarData";
 
 @Component({
@@ -9,10 +9,16 @@ import {CarData} from "../../global-services/data-objects/CarData";
 export class GarageSingleCarComponent implements OnInit {
 
   @Input() _car:CarData;
+  @Output() onSelected = new EventEmitter<CarData>();
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  protected select(car:CarData)
+  {
+    this.onSelected.emit(this._car);
   }
 
 }

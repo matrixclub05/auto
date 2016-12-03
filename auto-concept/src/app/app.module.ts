@@ -25,6 +25,7 @@ import {GarageCarsComponent} from "./garage/garage-cars/garage-cars.component";
 import { GarageSingleCarComponent } from './garage/garage-single-car/garage-single-car.component';
 import { BrandListComponent } from './components/brand-list/brand-list.component';
 import { BanerComponent } from './baner/baner.component';
+import {ServiceBookComponent} from "./garage/service-book/service-book.component";
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import { BanerComponent } from './baner/baner.component';
     GarageCarsComponent,
     GarageSingleCarComponent,
     BanerComponent,
-    BrandListComponent
+    BrandListComponent,
+    ServiceBookComponent
   ],
   imports: [
     BrowserModule,
