@@ -10,6 +10,9 @@
      display: inline-block;
      font-size: 13px;
      padding: 15px 0;
+     &:hover {
+       color: #df1f3d;
+     }
      &::after{
        content: "\f105";
        font-family: FontAwesome;
