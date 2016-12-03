@@ -18,6 +18,8 @@ import {GarageModule} from "./garage/garage.module";
 import {VehicleModelsComponent} from "./garage/vehicle-models/vehicle-models.component";
 import {LeftNavComponent} from "./components/left-nav/left-nav.component";
 import {RouterModule} from "@angular/router";
+import { MainComponent } from './pages/main/main.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import {RouterModule} from "@angular/router";
     ChatComponent,
     GarageComponent,
     VehicleModelsComponent,
-    LeftNavComponent
+    LeftNavComponent,
+    MainComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
