@@ -3,16 +3,21 @@
     <nav class="navbar">
       <ul class="nav navbar-nav" *ngIf="!_loginService.isLoggedIn">
         <li class="nav-item pull-right">
-          <a (click)="openRegistrationModal(true)" href="#" class="nav-link">Войти</a>
+          <a (click)="openRegistrationModal(true)" href="javascript:void(0)" class="nav-link">Войти</a>
           <a href="#" class="nav-link"></a>
         </li>
         <li class="nav-item pull-right">
-          <a (click)="openRegistrationModal()" href="#" class="nav-link" data-hover="Регистрация">Регистрация</a>
+          <a (click)="openRegistrationModal()" href="javascript:void(0)" class="nav-link" data-hover="Регистрация">Регистрация</a>
         </li>
       </ul>
-      <div *ngIf="_loginService.isLoggedIn">
-        {{_loginService.loginData.loginKey}}
-      </div>
+      <ul class="nav navbar-nav" *ngIf="_loginService.isLoggedIn">
+        <li class="nav-item pull-right">
+          <a (click)="_loginService.logOut()" href="javascript:void(0)" class="nav-link">Выйти</a>
+        </li>
+        <li class="nav-item pull-right">
+          <a href="javascript:void(0)" class="nav-link">{{_loginService.loginData.loginKey}}</a>
+        </li>
+      </ul>
     </nav>
   </div>
 </div>

@@ -37,9 +37,8 @@
                         <!-- Button -->
 
                         <div class="col-sm-12 controls">
-                            <a id="btn-login" href="#" class="btn btn-success" (click)="logUserIn()">Login  </a>
-                            <a id="btn-fblogin" href="#" class="btn btn-primary">Login with Facebook</a>
-
+                            <button id="btn-login" href="javascript:void(0)" class="btn btn-success" [disabled]="!canLogin" (click)="logUserIn()" type="button">Login  </button>
+                            <button id="btn-fblogin" href="javascript:void(0)" class="btn btn-primary" [disabled]="!canLogin" (click)="logUserIn()" type="button">Login with Facebook</button>
                         </div>
                     </div>
 

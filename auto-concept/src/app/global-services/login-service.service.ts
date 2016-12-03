@@ -5,15 +5,18 @@ import {LoginStrategies} from "./data-objects/LoginStategies";
 @Injectable()
 export class LoginServiceService {
 
+  private __DEFAULT_LOGIN_KEY:string = "___DEFAULT_LOGIN_KEY_4320984";
   private _currentLoginStrategy: LoginStrategies = LoginStrategies.LocalStorageFlow;
   private _loginData:LoggedInData = null;
 
   constructor() {
     let loginKey:string = localStorage.getItem("siteLoginKey");
-    if(loginKey)
+    if(!loginKey)
     {
-      this._loginData = new LoggedInData(loginKey)
+      loginKey = this.__DEFAULT_LOGIN_KEY;
     }
+
+    this._loginData = new LoggedInData(loginKey)
   }
 
   public tryLoginUser(emailOrUserName: string, password: string) {
@@ -30,7 +33,8 @@ export class LoginServiceService {
 
   public logOut()
   {
-    localStorage.setItem("siteLoginKey", null);
+    localStorage.setItem("siteLoginKey", this.__DEFAULT_LOGIN_KEY);
+    this._loginData = new LoggedInData(this.__DEFAULT_LOGIN_KEY)
   }
 
   private loginWithLocalStorage(loginKey:string):void
@@ -41,7 +45,7 @@ export class LoginServiceService {
 
   public get isLoggedIn(): boolean
   {
-    return this._loginData != null;
+    return this._loginData.loginKey != this.__DEFAULT_LOGIN_KEY;
   }
 
   public get loginData():LoggedInData

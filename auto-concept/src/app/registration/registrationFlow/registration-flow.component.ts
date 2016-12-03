@@ -41,6 +41,11 @@ export class RegistrationFlowComponent{
     this._currentModal.close();
   }
 
+  protected get canLogin():boolean
+  {
+    return (this._userInputInfo.login != "" && this._userInputInfo.password != "");
+  }
+
   protected changeRegistrationStateTo(state:RegistrationStates)
   {
     this._currentRegistrationState = state;
@@ -50,8 +55,8 @@ export class RegistrationFlowComponent{
 
 class UserInputInfo
 {
-  public login:string;
-  public password:string;
+  public login:string = "";
+  public password:string = "";
 }
 
 enum RegistrationStates
