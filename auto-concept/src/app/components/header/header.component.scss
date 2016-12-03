@@ -1,10 +1,12 @@
 [app-registration] {
   float: right;
 }
-header {
+.main-header {
   margin: auto;
-  height: 100px;
+  height: 90px;
   background-color: rgba(17, 17, 17, 0.7);
+  position: absolute;
+  width: 100%;
 }
 .top{
   background: #000000;
