@@ -17,6 +17,7 @@ import { GarageComponent } from './garage/moduleView/garage.component';
 import {GarageModule} from "./garage/garage.module";
 import {VehicleModelsComponent} from "./garage/vehicle-models/vehicle-models.component";
 import {LeftNavComponent} from "./components/left-nav/left-nav.component";
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -28,8 +29,7 @@ import {LeftNavComponent} from "./components/left-nav/left-nav.component";
     ContentComponent,
     ChatComponent,
     GarageComponent,
-    VehicleModelsComponent
-
+    VehicleModelsComponent,
     LeftNavComponent
   ],
   imports: [
