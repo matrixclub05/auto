@@ -1,0 +1,28 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <nav class="col-lg-3 ">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/profile/car-store']" href="">Автомобили</a>
+          </li>
+          <li>
+            <a class="nav-link" href="">Заказы</a>
+          </li>
+          <li>
+            <a class="nav-link" href="">Запчасти</a>
+          </li>
+          <li>
+            <a class="nav-link" href="">Сервисная книга</a>
+          </li>
+          <li>
+            <a class="nav-link" href="">Личные данные</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="col-lg-9">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</section>

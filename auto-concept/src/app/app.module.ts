@@ -18,8 +18,10 @@ import {GarageModule} from "./garage/garage.module";
 import {VehicleModelsComponent} from "./garage/vehicle-models/vehicle-models.component";
 import {LeftNavComponent} from "./components/left-nav/left-nav.component";
 import {RouterModule} from "@angular/router";
-import { MainComponent } from './pages/main/main.component';
-import { ProfileComponent } from './pages/profile/profile.component';
+import { MainComponent } from './pages/main/component/main.component';
+import { ProfileComponent } from './pages/profile/component/profile.component';
+import {ProfileRoutingModule} from "./pages/profile/profile-routing.module";
+import { CarStoreComponent } from './pages/profile/car-store/car-store.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { ProfileComponent } from './pages/profile/profile.component';
     VehicleModelsComponent,
     LeftNavComponent,
     MainComponent,
-    ProfileComponent
+    ProfileComponent,
+    CarStoreComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +46,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
     AppRoutingModule,
     RegistrationModule,
     GarageModule,
+    ProfileRoutingModule,
     NgbModule.forRoot()
   ],
   providers: [],
