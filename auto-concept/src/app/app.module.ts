@@ -20,6 +20,7 @@ import {MainComponent} from "./pages/main/component/main.component";
 import {ProfileComponent} from "./pages/profile/component/profile.component";
 import {CarStoreComponent} from "./pages/profile/car-store/car-store.component";
 import {StartComponent} from "./pages/profile/start/start.component";
+import {LoginServiceService} from "./global-services/login-service.service";
 
 
 @NgModule({
@@ -35,9 +36,7 @@ import {StartComponent} from "./pages/profile/start/start.component";
     VehicleModelsComponent,
     LeftNavComponent,
     MainComponent,
-    ProfileComponent,
-    CarStoreComponent,
-    StartComponent
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -46,10 +45,9 @@ import {StartComponent} from "./pages/profile/start/start.component";
     AppRoutingModule,
     RegistrationModule,
     GarageModule,
-    /*ProfileRoutingModule,*/
     NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [LoginServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

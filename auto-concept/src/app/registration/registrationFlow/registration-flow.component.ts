@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
+import {LoginServiceService} from "../../global-services/login-service.service";
 
 @Component({
   selector: 'ngbd-modal-content',
@@ -13,7 +14,9 @@ export class RegistrationFlowComponent{
   private RegistrationStatesEnum = RegistrationStates;
   private _currentRegistrationState:RegistrationStates = RegistrationStates.LOGIN;
 
-  constructor(public _currentModal: NgbActiveModal) {}
+  private _userInputInfo:UserInputInfo = new UserInputInfo();
+
+  constructor(public _currentModal: NgbActiveModal, private _loginService:LoginServiceService) {}
 
   ngOnInit() {
     if(!this.isLogin)
@@ -32,6 +35,12 @@ export class RegistrationFlowComponent{
     this._currentModal.close('Close click');
   }
 
+  protected logUserIn():void
+  {
+    this._loginService.tryLoginUser(this._userInputInfo.login, this._userInputInfo.password);
+    this._currentModal.close();
+  }
+
   protected changeRegistrationStateTo(state:RegistrationStates)
   {
     this._currentRegistrationState = state;
@@ -39,6 +48,11 @@ export class RegistrationFlowComponent{
 
 }
 
+class UserInputInfo
+{
+  public login:string;
+  public password:string;
+}
 
 enum RegistrationStates
 {

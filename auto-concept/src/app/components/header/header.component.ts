@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 import {RegistrationFlowComponent} from "../../registration/registrationFlow/registration-flow.component";
+import {LoginServiceService} from "../../global-services/login-service.service";
 
 @Component({
   selector: '[app-header]',
@@ -9,7 +10,7 @@ import {RegistrationFlowComponent} from "../../registration/registrationFlow/reg
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private _modalService: NgbModal) {
+  constructor(private _modalService: NgbModal, private _loginService:LoginServiceService) {
   }
 
   ngOnInit() {
