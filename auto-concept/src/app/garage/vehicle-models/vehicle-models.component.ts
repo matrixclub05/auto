@@ -12,9 +12,6 @@ export class VehicleModelsComponent implements OnInit {
 
   @Input() section:string;
 
-  protected STATES = State;
-  protected _currentState:State = State.Manufacturer;
-
   protected _manufacturers:Array<string> = [];
   protected _vehicles:Array<string> = [];
   protected _years:Array<number> = [];
@@ -72,9 +69,4 @@ export class VehicleModelsComponent implements OnInit {
   {
     return (this._selectedVehicle != "" && this._selectedYear != "" && this._selectedManufacturer != "");
   }
-}
-
-
-enum State{
-  Manufacturer,Vehicle,Year
 }
