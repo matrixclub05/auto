@@ -23,6 +23,7 @@ import {StartComponent} from "./pages/profile/start/start.component";
 import {LoginServiceService} from "./global-services/login-service.service";
 import {GarageCarsComponent} from "./garage/garage-cars/garage-cars.component";
 import { GarageSingleCarComponent } from './garage/garage-single-car/garage-single-car.component';
+import { BrandListComponent } from './components/brand-list/brand-list.component';
 import { BanerComponent } from './baner/baner.component';
 
 
@@ -44,7 +45,8 @@ import { BanerComponent } from './baner/baner.component';
     StartComponent,
     GarageCarsComponent,
     GarageSingleCarComponent,
-    BanerComponent
+    BanerComponent,
+    BrandListComponent
   ],
   imports: [
     BrowserModule,
