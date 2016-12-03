@@ -11,7 +11,7 @@ export class LoginServiceService {
 
   constructor() {
     let loginKey:string = localStorage.getItem("siteLoginKey");
-    if(loginKey)
+    if(!loginKey)
     {
       loginKey = this.__DEFAULT_LOGIN_KEY;
     }
@@ -45,7 +45,7 @@ export class LoginServiceService {
 
   public get isLoggedIn(): boolean
   {
-    return this._loginData != null;
+    return this._loginData.loginKey != this.__DEFAULT_LOGIN_KEY;
   }
 
   public get loginData():LoggedInData
