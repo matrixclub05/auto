@@ -1,12 +1,26 @@
 [app-registration] {
   float: right;
 }
-header {
+.header-bg {
+  background: url("assets/bg.jpg") no-repeat;
+  position: absolute;
+  height: 220px;
+  width: 100%;
+  padding-top: 90px;
+  background-size: 100% auto;
+  z-index: 0;
+}
+.main-header {
   margin: auto;
-  height: 100px;
+  height: 90px;
   background-color: rgba(17, 17, 17, 0.7);
+  position: relative;
+  z-index: 1;
 }
 .top{
+  position: relative;
+  z-index: 1;
+  height: 55px;
   background: #000000;
   li{
     padding: 0 20px;
