@@ -1,13 +1,16 @@
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
+import {GarageComponent} from "./garage/moduleView/garage.component";
+import {VehicleModelsComponent} from "./garage/vehicle-models/vehicle-models.component";
 
+const appRoutes: Routes = [
+  { path: 'account', component: GarageComponent }
+  //{ path: 'shop', component: ShopComponent }
+
+];
 @NgModule({
   imports: [
-    RouterModule.forRoot([
-      /* define app module routes here, e.g., to lazily load a module
-         (do not place feature module routes here, use an own -routing.module.ts in the feature instead)
-       */
-    ])
+    RouterModule.forRoot(appRoutes)
   ],
   exports: [RouterModule]
 })

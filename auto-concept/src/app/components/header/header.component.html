@@ -3,7 +3,8 @@
     <nav class="navbar">
       <ul class="nav navbar-nav">
         <li class="nav-item pull-right">
-          <a href="#" class="nav-link">Войти</a>
+          <a (click)="openRegistrationModal(true)" href="#" class="nav-link">Войти</a>
+          <a href="#" class="nav-link"></a>
         </li>
         <li class="nav-item pull-right">
           <a (click)="openRegistrationModal()" href="#" class="nav-link" data-hover="Регистрация">Регистрация</a>
@@ -24,13 +25,17 @@
 
     <ul class="nav navbar-nav main-menu">
       <li class="nav-item active">
-        <a class="nav-link" data-hover="Home" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" data-hover="Салон-магазин" href="#">Салон-магазин</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link"  data-hover="Сервис" href="#">Сервис</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  data-hover="Мы" href="#">Мы</a>
       </li>
       <li class="nav-item pull-right">
-        <a href="#" class="nav-link" data-hover="ГАРАЖ">ГАРАЖ</a>
+        <a class="nav-link" [routerLink]="['/account']" data-hover="ГАРАЖ">ГАРАЖ</a>
+
       </li>
 
 

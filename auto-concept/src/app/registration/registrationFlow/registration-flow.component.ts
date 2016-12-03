@@ -8,12 +8,18 @@ import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 })
 export class RegistrationFlowComponent{
 
+  public isLogin:boolean = false;
+
   private RegistrationStatesEnum = RegistrationStates;
   private _currentRegistrationState:RegistrationStates = RegistrationStates.LOGIN;
 
   constructor(public _currentModal: NgbActiveModal) {}
 
   ngOnInit() {
+    if(!this.isLogin)
+    {
+      this._currentRegistrationState = RegistrationStates.REGISTER;
+    }
   }
 
   protected cancel()
