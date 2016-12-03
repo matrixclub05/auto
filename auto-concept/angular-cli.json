@@ -18,6 +18,7 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
+
         "styles.scss"
       ],
       "scripts": [],
@@ -28,7 +29,9 @@
       }
     }
   ],
-  "addons": [],
+  "addons": [
+
+  ],
   "packages": [],
   "e2e": {
     "protractor": {
