@@ -11,7 +11,7 @@
         </li>
       </ul>
       <div *ngIf="_loginService.isLoggedIn">
-        МОРДА ЛИЧНЫЙ КАБИНЕТ
+        {{_loginService.loginData.loginKey}}
       </div>
     </nav>
   </div>

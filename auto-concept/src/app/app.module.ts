@@ -36,7 +36,9 @@ import {LoginServiceService} from "./global-services/login-service.service";
     VehicleModelsComponent,
     LeftNavComponent,
     MainComponent,
-    ProfileComponent
+    ProfileComponent,
+    CarStoreComponent,
+    StartComponent
   ],
   imports: [
     BrowserModule,
