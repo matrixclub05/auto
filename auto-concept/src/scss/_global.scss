@@ -1,10 +1,15 @@
-a {
+a, a:hover, a:active, a:visited {
   outline-width: 0px !important;
+  text-decoration: none;
+
 }
 body {
   background: url("assets/bg.jpg") no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .tab-pane {
   background: #fff;
+}
+html, body {
+  height: 100%;
 }

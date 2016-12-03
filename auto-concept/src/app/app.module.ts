@@ -16,9 +16,12 @@ import {GarageComponent} from "./garage/moduleView/garage.component";
 import {GarageModule} from "./garage/garage.module";
 import {VehicleModelsComponent} from "./garage/vehicle-models/vehicle-models.component";
 import {LeftNavComponent} from "./components/left-nav/left-nav.component";
-import {MainComponent} from "./pages/main/main.component";
-import {ProfileComponent} from "./pages/profile/profile.component";
+import {MainComponent} from "./pages/main/component/main.component";
+import {ProfileComponent} from "./pages/profile/component/profile.component";
+import {CarStoreComponent} from "./pages/profile/car-store/car-store.component";
+import {StartComponent} from "./pages/profile/start/start.component";
 import {LoginServiceService} from "./global-services/login-service.service";
+
 
 @NgModule({
   declarations: [
@@ -33,7 +36,9 @@ import {LoginServiceService} from "./global-services/login-service.service";
     VehicleModelsComponent,
     LeftNavComponent,
     MainComponent,
-    ProfileComponent
+    ProfileComponent,
+    CarStoreComponent,
+    StartComponent
   ],
   imports: [
     BrowserModule,

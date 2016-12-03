@@ -1,10 +1,26 @@
 import { NgModule } from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {MainComponent} from "./pages/main/main.component";
-import {ProfileComponent} from "./pages/profile/profile.component";
+import {MainComponent} from "./pages/main/component/main.component";
+import {ProfileComponent} from "./pages/profile/component/profile.component";
+import {CarStoreComponent} from "./pages/profile/car-store/car-store.component";
+import {StartComponent} from "./pages/profile/start/start.component";
 
 const appRoutes: Routes = [
-  { path: 'profile', component: ProfileComponent },
+  {
+    path: 'profile',
+    component: ProfileComponent,
+    children: [
+      {
+        path: '',
+        component: StartComponent
+      },
+      {
+        path: 'car-store',
+        component: CarStoreComponent
+
+      }
+    ]
+  },
   { path: '', component: MainComponent }
 
 ];
