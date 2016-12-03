@@ -1,7 +1,7 @@
 <div class="top">
   <div class="container">
     <nav class="navbar">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav" *ngIf="!_loginService.isLoggedIn">
         <li class="nav-item pull-right">
           <a (click)="openRegistrationModal(true)" href="#" class="nav-link">Войти</a>
           <a href="#" class="nav-link"></a>
@@ -10,6 +10,9 @@
           <a (click)="openRegistrationModal()" href="#" class="nav-link" data-hover="Регистрация">Регистрация</a>
         </li>
       </ul>
+      <div *ngIf="_loginService.isLoggedIn">
+        МОРДА ЛИЧНЫЙ КАБИНЕТ
+      </div>
     </nav>
   </div>
 </div>

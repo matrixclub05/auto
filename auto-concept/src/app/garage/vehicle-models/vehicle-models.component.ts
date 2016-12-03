@@ -1,6 +1,7 @@
 import {Component, OnInit, Input} from '@angular/core';
 import {GarageDataService} from "../services/garage-data.service";
-import {Statement} from "@angular/compiler/src/output/output_ast";
+import {LoginServiceService} from "../../global-services/login-service.service";
+import {CarData} from "../../global-services/data-objects/CarData";
 
 @Component({
   selector: '[vehicle-models]',
@@ -22,9 +23,9 @@ export class VehicleModelsComponent implements OnInit {
   protected _selectedVehicle:string = "";
   protected _selectedYear:string = "";
 
-  constructor(private _garageDataService:GarageDataService)
+  constructor(private _garageDataService:GarageDataService, private _loginDataService:LoginServiceService)
   {
-    
+
   }
 
   ngOnInit()
@@ -54,6 +55,22 @@ export class VehicleModelsComponent implements OnInit {
     if(this._selectedManufacturer != "" && this._selectedVehicle != "")
       this._selectedYear = "";
       this._years = this._garageDataService.getVehicleYears(this.section, this._selectedManufacturer, this._selectedVehicle);
+  }
+
+  protected saveCar()
+  {
+    if(this.readyForSave)
+    {
+      let userData = this._loginDataService.loginData.getUserData("garageCar");
+      userData.carList.push(new CarData(this._selectedManufacturer, this._selectedVehicle, parseInt(this._selectedYear)));
+
+      this._loginDataService.loginData.storeUserData("garageCar", userData);
+    }
+  }
+
+  protected get readyForSave():boolean
+  {
+    return (this._selectedVehicle != "" && this._selectedYear != "" && this._selectedManufacturer != "");
   }
 }
 
