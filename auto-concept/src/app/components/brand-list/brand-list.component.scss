@@ -1,0 +1,21 @@
+$border: 2px solid rgb(169, 32, 52) ;
+.brands {
+  border-top: $border;
+  border-bottom: $border;
+}
+.brand-list {
+  padding: 20px;
+  margin: 0;
+  &::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+}
+.brand-item {
+  list-style: none;
+  display: block;
+  float: left;
+  width: 14.28571428571429%;
+}

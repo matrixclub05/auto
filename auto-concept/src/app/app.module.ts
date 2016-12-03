@@ -21,6 +21,7 @@ import {ProfileComponent} from "./pages/profile/component/profile.component";
 import {CarStoreComponent} from "./pages/profile/car-store/car-store.component";
 import {StartComponent} from "./pages/profile/start/start.component";
 import {LoginServiceService} from "./global-services/login-service.service";
+import { BrandListComponent } from './components/brand-list/brand-list.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import {LoginServiceService} from "./global-services/login-service.service";
     MainComponent,
     ProfileComponent,
     CarStoreComponent,
-    StartComponent
+    StartComponent,
+    BrandListComponent
   ],
   imports: [
     BrowserModule,
