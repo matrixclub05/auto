@@ -23,6 +23,7 @@ import {StartComponent} from "./pages/profile/start/start.component";
 import {LoginServiceService} from "./global-services/login-service.service";
 import {GarageCarsComponent} from "./garage/garage-cars/garage-cars.component";
 import { GarageSingleCarComponent } from './garage/garage-single-car/garage-single-car.component';
+import { BanerComponent } from './baner/baner.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { GarageSingleCarComponent } from './garage/garage-single-car/garage-sing
     CarStoreComponent,
     StartComponent,
     GarageCarsComponent,
-    GarageSingleCarComponent
+    GarageSingleCarComponent,
+    BanerComponent
   ],
   imports: [
     BrowserModule,
