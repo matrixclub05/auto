@@ -21,6 +21,8 @@ import {ProfileComponent} from "./pages/profile/component/profile.component";
 import {CarStoreComponent} from "./pages/profile/car-store/car-store.component";
 import {StartComponent} from "./pages/profile/start/start.component";
 import {LoginServiceService} from "./global-services/login-service.service";
+import {GarageCarsComponent} from "./garage/garage-cars/garage-cars.component";
+import { GarageSingleCarComponent } from './garage/garage-single-car/garage-single-car.component';
 import { BrandListComponent } from './components/brand-list/brand-list.component';
 
 
@@ -40,6 +42,8 @@ import { BrandListComponent } from './components/brand-list/brand-list.component
     ProfileComponent,
     CarStoreComponent,
     StartComponent,
+    GarageCarsComponent,
+    GarageSingleCarComponent,
     BrandListComponent
   ],
   imports: [
