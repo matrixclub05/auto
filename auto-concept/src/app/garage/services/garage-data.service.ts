@@ -4,11 +4,15 @@ import {Snowmobiles} from "../draftData/Snowmobiles";
 import {Quadrocycles} from "../draftData/Quadrocycles";
 import {Motorcycles} from "../draftData/Motorcycles";
 import {Cars} from "../draftData/Cars";
+import {Service} from "../draftData/Service";
 
 @Injectable()
 export class GarageDataService {
 
   private _sections:SectionsDictionary = {};
+  private _serviceBook:Array<ServiceRow> = [];
+
+
   constructor()
   {
     this._sections["Автомобили"] = Cars.data;
@@ -16,8 +20,14 @@ export class GarageDataService {
     this._sections["Квадроциклы"] = Quadrocycles.data;
     this._sections["Снегоходы"] = Snowmobiles.data;
     this._sections["Грузовики"] = Trucks.data;
+
+    this._serviceBook = Service.data;
   }
 
+  public get serviceBook():Array<ServiceRow>
+  {
+    return this._serviceBook;
+  }
 
   public get sectionList():Array<string>
   {
@@ -64,6 +74,11 @@ export class GarageDataService {
   }
 }
 
+export interface ServiceRow
+{
+  description:string;
+  done:boolean;
+}
 
 interface SectionsDictionary
 {

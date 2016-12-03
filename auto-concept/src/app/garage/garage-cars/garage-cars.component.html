@@ -1,9 +1,14 @@
-<div *ngIf="getAndSaveGarageCars().length > 0">
-  <ul class="list-group">
-    <li class="list-group-item" *ngFor="let car of _carList" app-garage-single-car [_car]="car"></li>
-  </ul>
-</div>
+<span *ngIf="_currentState == _states.ADD_CARS_OR_SHOW_CARS">
+  <div *ngIf="getAndSaveGarageCars().length > 0">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let car of _carList" app-garage-single-car [_car]="car" (onSelected)="onCarSelected($event)" ></li>
+    </ul>
+  </div>
 
-<div *ngIf="getAndSaveGarageCars().length == 0">
-  <app-garage></app-garage>
-</div>
+  <div *ngIf="getAndSaveGarageCars().length == 0">
+    <app-garage></app-garage>
+  </div>
+</span>
+
+<span *ngIf="_currentState == _states.SERVICE_BOOK" service-book [carServiceBook]="_garageData.serviceBook">
+</span>

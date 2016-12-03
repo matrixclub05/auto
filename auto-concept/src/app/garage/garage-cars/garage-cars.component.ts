@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {LoginServiceService} from "../../global-services/login-service.service";
 import {CarData} from "../../global-services/data-objects/CarData";
+import {GarageDataService} from "../services/garage-data.service";
 
 @Component({
   selector: '[garage-cars]',
@@ -9,12 +10,22 @@ import {CarData} from "../../global-services/data-objects/CarData";
 })
 export class GarageCarsComponent implements OnInit {
 
+  private _currentState:GarageCarsStates = GarageCarsStates.ADD_CARS_OR_SHOW_CARS;
+  private _states = GarageCarsStates;
   private _carList:Array<CarData> = [];
 
-  constructor(private _loginService:LoginServiceService) { }
+  private _selectedCar:CarData = null;
+
+  constructor(private _loginService:LoginServiceService, private _garageData:GarageDataService) { }
 
   ngOnInit() {
 
+  }
+
+  onCarSelected(car:CarData):void
+  {
+    this._selectedCar = car;
+    this._currentState = this._states.SERVICE_BOOK;
   }
 
   protected getAndSaveGarageCars():Array<CarData>
@@ -22,4 +33,9 @@ export class GarageCarsComponent implements OnInit {
     this._carList = this._loginService.loginData.getUserData("garageCar").carList;
     return this._carList;
   }
+}
+
+enum GarageCarsStates
+{
+  ADD_CARS_OR_SHOW_CARS, SERVICE_BOOK
 }

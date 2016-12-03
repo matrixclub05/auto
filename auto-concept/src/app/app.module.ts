@@ -24,6 +24,7 @@ import {LoginServiceService} from "./global-services/login-service.service";
 import {GarageCarsComponent} from "./garage/garage-cars/garage-cars.component";
 import { GarageSingleCarComponent } from './garage/garage-single-car/garage-single-car.component';
 import { BanerComponent } from './baner/baner.component';
+import {ServiceBookComponent} from "./garage/service-book/service-book.component";
 import { BrandListComponent } from './components/brand-list/brand-list.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 
@@ -48,7 +49,8 @@ import { CategoriesComponent } from './components/categories/categories.componen
     GarageSingleCarComponent,
     BanerComponent,
     BrandListComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    ServiceBookComponent
   ],
   imports: [
     BrowserModule,
