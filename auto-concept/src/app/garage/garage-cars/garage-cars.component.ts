@@ -33,6 +33,11 @@ export class GarageCarsComponent implements OnInit {
     this._carList = this._loginService.loginData.getUserData("garageCar").carList;
     return this._carList;
   }
+
+  protected backFromServiceBook(data:boolean)
+  {
+    this._currentState = GarageCarsStates.ADD_CARS_OR_SHOW_CARS;
+  }
 }
 
 enum GarageCarsStates

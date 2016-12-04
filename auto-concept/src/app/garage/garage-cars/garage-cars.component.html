@@ -1,5 +1,5 @@
-<span add-to-garage-button></span>
 <span *ngIf="_currentState == _states.ADD_CARS_OR_SHOW_CARS">
+  <span add-to-garage-button></span>
   <div *ngIf="getAndSaveGarageCars().length > 0">
     <ul class="list-group">
       <li class="list-group-item" *ngFor="let car of _carList" app-garage-single-car [_car]="car" (onSelected)="onCarSelected($event)" ></li>
@@ -11,5 +11,5 @@
   </div>
 </span>
 
-<span *ngIf="_currentState == _states.SERVICE_BOOK" service-book [carServiceBook]="_garageData.serviceBook">
+<span *ngIf="_currentState == _states.SERVICE_BOOK" service-book [carServiceBook]="_garageData.serviceBook" (goBack)="backFromServiceBook($event)">
 </span>
