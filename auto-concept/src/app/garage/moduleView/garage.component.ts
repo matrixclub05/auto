@@ -27,7 +27,6 @@ export class GarageComponent implements OnInit {
 
   protected onCarAdded(flag:boolean)
   {
-    debugger;
     if(this._modalRef)
     {
       this._modalRef.close("Просто так :)");

@@ -43,6 +43,10 @@ export class LoggedInData {
 
   private createData(dataKey: string, siteData: any) {
     let rawData = JSON.parse(localStorage.getItem("siteData"));
+    if(!rawData)
+    {
+      rawData = {};
+    }
     if(!rawData[this._loginKey])
     {
       rawData[this._loginKey] = {};

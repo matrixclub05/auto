@@ -31,6 +31,7 @@ import {CategoriesComponent } from './components/categories/categories.component
 import {CarsSelectorComponent} from "./garage/cars-selector/cars-selector.component";
 import {NativeWindowTools} from "./global-services/NativeWindowTools";
 import { StoreServicesComponent } from './pages/profile/store-services/store-services.component';
+import {SignUpForServiceComponent} from "./garage/sign-up-for-service/sign-up-for-service.component";
 
 
 @NgModule({
@@ -57,7 +58,8 @@ import { StoreServicesComponent } from './pages/profile/store-services/store-ser
     CategoriesComponent,
     ServiceBookComponent,
     CarsSelectorComponent,
-    StoreServicesComponent
+    StoreServicesComponent,
+    SignUpForServiceComponent
   ],
   imports: [
     BrowserModule,

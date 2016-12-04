@@ -10,7 +10,6 @@ import {CarData} from "../../global-services/data-objects/CarData";
 })
 export class CarsSelectorComponent implements OnInit {
 
-  private _carList:Array<CarData> = [];
   private _selectedCarIndex:number = 0;
 
   private CAR_VIEW_STATES = CarViewState;
@@ -20,7 +19,11 @@ export class CarsSelectorComponent implements OnInit {
 
   ngOnInit()
   {
-    this._carList = this._loginService.loginData.getUserData("garageCar").carList;
+  }
+
+  protected get _carList():Array<CarData>
+  {
+    return this._loginService.loginData.getUserData("garageCar").carList;
   }
 
   protected get selectedCar()
@@ -37,6 +40,16 @@ export class CarsSelectorComponent implements OnInit {
   {
     this._carViewState = CarViewState.CarView;
     this._selectedCarIndex = index;
+
+    let userData = this._loginService.loginData.getUserData("garageCar");
+
+    let car:CarData = this._carList[this._selectedCarIndex];
+    if(userData.carList.length == 0)
+    {
+      userData.selectedCar = car;
+    }
+
+    this._loginService.loginData.storeUserData("garageCar", userData);
   }
 
   protected openServiceBook(car:CarData)

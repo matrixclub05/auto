@@ -12,7 +12,7 @@
   <div class="form-group row">
     <label for="selectedVehicle">Модель</label>
     <select id="selectedVehicle" class="form-control" [(ngModel)]="_selectedVehicle" (ngModelChange)="getVehicleYears()" [disabled]="_selectedManufacturer == ''">
-      <option value="">Выбирите Модель</option>
+      <option value="">Выберите Модель</option>
       <option *ngFor="let vehicle of _vehicles" value="{{vehicle}}">
         {{vehicle}}
       </option>
@@ -22,7 +22,7 @@
   <div class="form-group row">
     <label for="selectedYear">Год Выпуска</label>
     <select id="selectedYear" class="form-control" [(ngModel)]="_selectedYear" [disabled]="_selectedVehicle == ''">
-      <option value="">Выбирите Год Выпуска</option>
+      <option value="">Выберите Год Выпуска</option>
       <option *ngFor="let year of _years" value="{{year}}">
         {{year}}
       </option>
