@@ -8,7 +8,7 @@ import {Output} from "@angular/core/src/metadata/directives";
 })
 export class RolloverBtnComponent implements OnInit {
   @Input() text: string;
-
+  @Input() height: number = 38;
   constructor() { }
 
   ngOnInit() {
