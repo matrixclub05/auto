@@ -29,7 +29,7 @@ import {AddToGarageButtonComponent} from "./garage/add-to-garage-button/add-to-g
 import {BrandListComponent } from './components/brand-list/brand-list.component';
 import {CategoriesComponent } from './components/categories/categories.component';
 import {CarsSelectorComponent} from "./garage/cars-selector/cars-selector.component";
-import {WindowRefference} from "./global-services/WindowRefference";
+import {NativeWindowTools} from "./global-services/NativeWindowTools";
 
 
 @NgModule({
@@ -66,7 +66,7 @@ import {WindowRefference} from "./global-services/WindowRefference";
     GarageModule,
     NgbModule.forRoot()
   ],
-  providers: [LoginServiceService, WindowRefference],
+  providers: [LoginServiceService, NativeWindowTools],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

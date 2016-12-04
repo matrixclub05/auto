@@ -1,6 +1,6 @@
 import {Component, OnInit, Input, Output, EventEmitter, ViewChild, ElementRef} from '@angular/core';
 import {ServiceRow} from "../services/garage-data.service";
-import {WindowRefference} from "../../global-services/WindowRefference";
+import {NativeWindowTools} from "../../global-services/NativeWindowTools";
 
 @Component({
   selector: '[service-book]',
@@ -13,10 +13,14 @@ export class ServiceBookComponent implements OnInit {
   @Input() carServiceBook:Array<ServiceRow>;
   @Output() goBack = new EventEmitter<boolean>();
 
-  constructor() { }
+  constructor(private _windowTools:NativeWindowTools) { }
 
   ngOnInit() {
-    this.content.nativeElement.scrollIntoView(true);
+    let nativeElement:any = this.content.nativeElement;
+    if(!this._windowTools.isElementInViewPort(nativeElement))
+    {
+      nativeElement.scrollIntoView(true);
+    }
   }
 
   protected backButtonHit()

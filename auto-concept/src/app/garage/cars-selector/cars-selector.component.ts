@@ -35,6 +35,7 @@ export class CarsSelectorComponent implements OnInit {
 
   protected setSelectedIndex(index:number)
   {
+    this._carViewState = CarViewState.CarView;
     this._selectedCarIndex = index;
   }
 
