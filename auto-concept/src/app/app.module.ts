@@ -30,6 +30,7 @@ import {BrandListComponent } from './components/brand-list/brand-list.component'
 import {CategoriesComponent } from './components/categories/categories.component';
 import {CarsSelectorComponent} from "./garage/cars-selector/cars-selector.component";
 import {NativeWindowTools} from "./global-services/NativeWindowTools";
+import { StoreServicesComponent } from './pages/profile/store-services/store-services.component';
 
 
 @NgModule({
@@ -55,7 +56,8 @@ import {NativeWindowTools} from "./global-services/NativeWindowTools";
     AddToGarageButtonComponent,
     CategoriesComponent,
     ServiceBookComponent,
-    CarsSelectorComponent
+    CarsSelectorComponent,
+    StoreServicesComponent
   ],
   imports: [
     BrowserModule,

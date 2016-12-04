@@ -1,0 +1,18 @@
+:host{
+  display: block;
+}
+a, a:hover, a:visited, a:focus, a:active{
+  color: #df1f3d;
+  line-height: 150px;
+}
+.btn-primary {
+
+  background-color: #fff;
+  border-color: #000;
+  border-width: 2px;
+
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
