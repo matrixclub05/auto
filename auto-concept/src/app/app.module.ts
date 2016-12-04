@@ -50,7 +50,7 @@ import {CategoriesComponent } from './components/categories/categories.component
     GarageSingleCarComponent,
     BanerComponent,
     BrandListComponent,
-    AddToGarageButtonComponent
+    AddToGarageButtonComponent,
     CategoriesComponent,
     ServiceBookComponent
   ],
