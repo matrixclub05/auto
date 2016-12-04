@@ -27,8 +27,12 @@ export class SignUpForServiceComponent implements OnInit {
     let selectedCar = userData.selectedCar;
     if(selectedCar)
     {
-      this._selectedVehicle = selectedCar.model;
       this._selectedManufacturer = selectedCar.manufacturer;
+      if(selectedCar.manufacturer)
+      {
+        this.getVehiclesByManufacturer();
+      }
+      this._selectedVehicle = selectedCar.model;
     }
     this.getManufacturers();
   }
