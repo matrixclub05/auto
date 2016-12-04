@@ -1,11 +1,9 @@
 a, a:hover, a:active, a:visited {
   outline-width: 0px !important;
   text-decoration: none;
-
 }
-body {
-  /*background: url("assets/bg.jpg") no-repeat;
-  background-size: contain;*/
+h1,h2, h3, h4, h5,h6 {
+  text-transform: uppercase;
 }
 .tab-pane {
   background: #fff;
@@ -15,13 +13,14 @@ html, body {
 }
 body {
   min-height: 100%;
+  color: #5a5a5a;
 }
 app-root, app-profile {
   display: block;
 }
 
 app-root {
-  padding-bottom: 502px;
+  padding-bottom: 560px;
 }
 .wrapper {
   background: #fff;
@@ -54,4 +53,5 @@ app-root {
   width: 100%;
   background-color: #111;
   font-size: 13px;
+  transform: translateZ(0);
 }
