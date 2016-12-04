@@ -17,5 +17,6 @@ export class StoreServicesComponent implements OnInit {
   protected openServiceSignUp()
   {
     const modalRef:NgbModalRef = this._modalService.open(SignUpForServiceComponent);
+    modalRef.componentInstance.modalRef = modalRef;
   }
 }

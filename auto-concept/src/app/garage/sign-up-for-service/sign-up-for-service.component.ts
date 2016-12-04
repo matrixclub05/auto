@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {GarageDataService} from "../services/garage-data.service";
-import {NgbTabChangeEvent} from "@ng-bootstrap/ng-bootstrap";
+import {NgbTabChangeEvent, NgbModalRef} from "@ng-bootstrap/ng-bootstrap";
 import {LoginServiceService} from "../../global-services/login-service.service";
 
 @Component({
@@ -9,6 +9,8 @@ import {LoginServiceService} from "../../global-services/login-service.service";
   styleUrls: ['./sign-up-for-service.component.scss']
 })
 export class SignUpForServiceComponent implements OnInit {
+
+  protected _modalRef:NgbModalRef = null;
 
   protected _manufacturers:Array<string> = [];
   protected _vehicles:Array<string> = [];
@@ -51,10 +53,21 @@ export class SignUpForServiceComponent implements OnInit {
     }
   }
 
-  public beforeChange($event: NgbTabChangeEvent) {
-    if ($event.nextId === 'bar') {
-      $event.preventDefault();
+  protected beforeChange($event: NgbTabChangeEvent) {
+
+  }
+
+  public set modalRef(modalRef:NgbModalRef)
+  {
+    this._modalRef = modalRef;
+  }
+
+  protected formSubmit()
+  {
+    if(this._modalRef)
+    {
+      this._modalRef.close();
     }
-  };
+  }
 
 }
