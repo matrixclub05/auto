@@ -31,6 +31,7 @@ import {CategoriesComponent } from './components/categories/categories.component
 import {CarsSelectorComponent} from "./garage/cars-selector/cars-selector.component";
 import {NativeWindowTools} from "./global-services/NativeWindowTools";
 import { StoreServicesComponent } from './pages/profile/store-services/store-services.component';
+import { RolloverBtnComponent } from './components/rollover-btn/rollover-btn.component';
 import {SignUpForServiceComponent} from "./garage/sign-up-for-service/sign-up-for-service.component";
 
 
@@ -59,6 +60,7 @@ import {SignUpForServiceComponent} from "./garage/sign-up-for-service/sign-up-fo
     ServiceBookComponent,
     CarsSelectorComponent,
     StoreServicesComponent,
+    RolloverBtnComponent,
     SignUpForServiceComponent
   ],
   imports: [

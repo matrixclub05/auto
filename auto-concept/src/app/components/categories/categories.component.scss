@@ -1,10 +1,31 @@
 :host {
   display: block;
 }
+a{
+
+
+}
+a:hover {
+
+}
 .nav-link{
   line-height: 2em;
+  &::after{
+    content: '';
+    display: block;
+    width: 0;
+    border-bottom: 1px solid;
+    transition: width 0.2s ease;
+
+    margin-top: -0.3em;
+
+  }
   &:hover{
-    text-decoration: underline;
+    &::after{
+      width: 100%;
+      transition: width 0.2s ease;
+
+    }
   }
 }
 
