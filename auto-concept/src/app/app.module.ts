@@ -22,11 +22,12 @@ import {CarStoreComponent} from "./pages/profile/car-store/car-store.component";
 import {StartComponent} from "./pages/profile/start/start.component";
 import {LoginServiceService} from "./global-services/login-service.service";
 import {GarageCarsComponent} from "./garage/garage-cars/garage-cars.component";
-import { GarageSingleCarComponent } from './garage/garage-single-car/garage-single-car.component';
-import { BrandListComponent } from './components/brand-list/brand-list.component';
-import { BanerComponent } from './baner/baner.component';
+import {GarageSingleCarComponent } from './garage/garage-single-car/garage-single-car.component';
+import {BanerComponent } from './baner/baner.component';
 import {ServiceBookComponent} from "./garage/service-book/service-book.component";
 import {AddToGarageButtonComponent} from "./garage/add-to-garage-button/add-to-garage-button.component";
+import {BrandListComponent } from './components/brand-list/brand-list.component';
+import {CategoriesComponent } from './components/categories/categories.component';
 
 
 @NgModule({
@@ -49,8 +50,9 @@ import {AddToGarageButtonComponent} from "./garage/add-to-garage-button/add-to-g
     GarageSingleCarComponent,
     BanerComponent,
     BrandListComponent,
-    ServiceBookComponent,
     AddToGarageButtonComponent
+    CategoriesComponent,
+    ServiceBookComponent
   ],
   imports: [
     BrowserModule,
