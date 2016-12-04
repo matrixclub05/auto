@@ -1,18 +1,32 @@
-$border: 2px solid rgb(169, 32, 52) ;
+$border: 2px solid rgb(169, 32, 52);
+:host {
+  display: block;
+}
+
 .brands {
   border-top: $border;
   border-bottom: $border;
 }
+
 .brand-list {
   padding: 20px;
   margin: 0;
-  &::after{
+  &::after {
     content: "";
     clear: both;
     display: table;
   }
 
 }
+
+img {
+  filter: grayscale(100%);
+  &:hover {
+    transition: filter 0.5s;
+    filter: grayscale(0%);
+  }
+}
+
 .brand-item {
   list-style: none;
   display: block;
