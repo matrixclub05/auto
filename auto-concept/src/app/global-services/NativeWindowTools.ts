@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable, ElementRef} from '@angular/core';
 
 function _window() : any {
     // return the global native browser window object
@@ -12,9 +12,9 @@ export class NativeWindowTools
         return _window();
     }
 
-    public isElementInViewPort(nativeElement:any)
+    public isElementInViewPort(elementRefference:ElementRef):boolean
     {
-        var rect = nativeElement.getBoundingClientRect();
+        var rect = elementRefference.nativeElement.getBoundingClientRect();
         var html = this.nativeWindow.document.documentElement;
 
         return (
@@ -23,5 +23,10 @@ export class NativeWindowTools
             rect.bottom <= (window.innerHeight || html.clientHeight) &&
             rect.right <= (window.innerWidth || html.clientWidth)
         );
+    }
+
+    public scrollToElement(elementRefference:ElementRef, elementOnTopOfViewPort:boolean = true):void
+    {
+        elementRefference.nativeElement.scrollIntoView(elementOnTopOfViewPort);
     }
 }

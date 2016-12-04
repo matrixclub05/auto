@@ -16,10 +16,9 @@ export class ServiceBookComponent implements OnInit {
   constructor(private _windowTools:NativeWindowTools) { }
 
   ngOnInit() {
-    let nativeElement:any = this.content.nativeElement;
-    if(!this._windowTools.isElementInViewPort(nativeElement))
+    if(!this._windowTools.isElementInViewPort(this.content))
     {
-      nativeElement.scrollIntoView(true);
+        this._windowTools.scrollToElement(this.content, true);
     }
   }
 
