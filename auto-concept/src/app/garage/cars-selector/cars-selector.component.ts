@@ -44,7 +44,7 @@ export class CarsSelectorComponent implements OnInit {
     let userData = this._loginService.loginData.getUserData("garageCar");
 
     let car:CarData = this._carList[this._selectedCarIndex];
-    if(userData.carList.length == 0)
+    if(userData.carList)
     {
       userData.selectedCar = car;
     }
