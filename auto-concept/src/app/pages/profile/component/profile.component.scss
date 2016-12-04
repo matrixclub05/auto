@@ -1,7 +1,35 @@
 :host {
   display: block;
 }
- li {
+li {
+  display: inline-block;
+  padding: 0 10px;
+
+}
+.row {
+  height: 100%;
+}
+
+a{
+  color: #fff;
+  text-transform: uppercase;
+  &::after{
+    content: '';
+    display: block;
+    width: 0;
+    border-bottom: 2px solid #fff;
+    transition: width 0.2s ease;
+    margin: 0 auto;
+  }
+  &:hover{
+    &::after{
+      width: 100%;
+      transition: width 0.2s ease;
+
+    }
+  }
+}
+/* li {
    position: relative;
    display: block;
    text-transform: uppercase;
@@ -24,4 +52,4 @@
        width: 5px;
      }
    }
- }
+ }*/

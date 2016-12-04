@@ -1,26 +1,31 @@
 <section class="container top">
+    <div class="breadcrumbs">
+      <div class="row vertical-align">
+        <nav class="col-lg-9 vertical-align">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/profile/car-store']" href="">Автомобили</a>
+            </li>
+            <li>
+              <a class="nav-link" href="">Заказы</a>
+            </li>
+            <li>
+              <a class="nav-link" href="">Запчасти</a>
+            </li>
+            <li>
+              <a class="nav-link" href="">Сервисная книга</a>
+            </li>
+            <li>
+              <a class="nav-link" href="">Личные данные</a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="col-lg-3 vertical-align">Гараж</h1>
+      </div>
+    </div>
 
-    <h1 class="breadcrumbs">Гараж</h1>
     <div class="row">
-      <nav class="col-lg-3 ">
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/profile/car-store']" href="">Автомобили</a>
-          </li>
-          <li>
-            <a class="nav-link" href="">Заказы</a>
-          </li>
-          <li>
-            <a class="nav-link" href="">Запчасти</a>
-          </li>
-          <li>
-            <a class="nav-link" href="">Сервисная книга</a>
-          </li>
-          <li>
-            <a class="nav-link" href="">Личные данные</a>
-          </li>
-        </ul>
-      </nav>
+
       <div class="col-lg-9">
         <router-outlet></router-outlet>
       </div>

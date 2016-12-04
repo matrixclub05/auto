@@ -1,13 +1,11 @@
-:host{
-  display: block;
-}
+
 
 .rollover {
   padding: 0;
   overflow: hidden;
   display: inline-block;
   background: #fff;
-  border: 2px solid #000;
+  border: 3px solid #000;
   width: 100%;
   position: relative;
   &:after{
@@ -36,7 +34,7 @@
     padding: 0;
   }
   &:hover{
-    border-color: #df1f3d;
+
     .content{
       transform: translate3d(0,100%,0);
     }
@@ -53,3 +51,19 @@
   }
 }
 
+:host{
+  display: block;
+  &.small {
+    .rollover {
+      border-width: 2px;
+    }
+    span {
+      font-weight: normal;
+    }
+  }
+  &.info {
+    .before {
+      background: red;
+    }
+  }
+}
