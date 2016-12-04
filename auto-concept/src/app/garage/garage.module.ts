@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {GarageDataService} from "./services/garage-data.service";
-import { GarageCarsComponent } from './garage-cars/garage-cars.component';
-import { ServiceBookComponent } from './service-book/service-book.component';
+import {GarageComponent} from "./moduleView/garage.component";
 
 @NgModule({
   imports: [
     CommonModule
   ],
   declarations: [],
-  providers: [GarageDataService]
+  providers: [GarageDataService],
+  entryComponents: [GarageComponent]
 })
 export class GarageModule { }

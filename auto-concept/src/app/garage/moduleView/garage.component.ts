@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {GarageDataService} from "../services/garage-data.service";
+import {NgbModalRef} from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
   selector: 'app-garage',
@@ -7,6 +8,8 @@ import {GarageDataService} from "../services/garage-data.service";
   styleUrls: ['garage.component.scss']
 })
 export class GarageComponent implements OnInit {
+
+  private _modalRef:NgbModalRef = null;
 
   constructor(private _garageDataService:GarageDataService)
   {
@@ -16,4 +19,18 @@ export class GarageComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  public set modalRef(modalRef:NgbModalRef)
+  {
+    this._modalRef = modalRef;
+  }
+
+  protected onCarAdded(flag:boolean)
+  {
+    debugger;
+    if(this._modalRef)
+    {
+      this._modalRef.close("Просто так :)");
+    }
+  }
 }

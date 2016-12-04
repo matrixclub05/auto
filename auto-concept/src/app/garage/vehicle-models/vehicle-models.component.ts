@@ -1,4 +1,4 @@
-import {Component, OnInit, Input} from '@angular/core';
+import {Component, OnInit, Input, EventEmitter, Output} from '@angular/core';
 import {GarageDataService} from "../services/garage-data.service";
 import {LoginServiceService} from "../../global-services/login-service.service";
 import {CarData} from "../../global-services/data-objects/CarData";
@@ -11,6 +11,7 @@ import {CarData} from "../../global-services/data-objects/CarData";
 export class VehicleModelsComponent implements OnInit {
 
   @Input() section:string;
+  @Output() onAdded = new EventEmitter<boolean>();
 
   protected _manufacturers:Array<string> = [];
   protected _vehicles:Array<string> = [];
@@ -62,6 +63,8 @@ export class VehicleModelsComponent implements OnInit {
       userData.carList.push(new CarData(this._selectedManufacturer, this._selectedVehicle, parseInt(this._selectedYear)));
 
       this._loginDataService.loginData.storeUserData("garageCar", userData);
+
+      this.onAdded.emit(true);
     }
   }
 
