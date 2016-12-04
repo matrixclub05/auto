@@ -5,13 +5,13 @@ import {Quadrocycles} from "../draftData/Quadrocycles";
 import {Motorcycles} from "../draftData/Motorcycles";
 import {Cars} from "../draftData/Cars";
 import {Service} from "../draftData/Service";
+import {CarData} from "../../global-services/data-objects/CarData";
 
 @Injectable()
 export class GarageDataService {
 
   private _sections:SectionsDictionary = {};
   private _serviceBook:Array<ServiceRow> = [];
-
 
   constructor()
   {

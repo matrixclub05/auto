@@ -5,4 +5,5 @@ import {CarData} from "./CarData";
 export class UserData
 {
   public carList:Array<CarData> = [];
+  public selectedCar:CarData = null;
 }

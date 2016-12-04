@@ -60,7 +60,12 @@ export class VehicleModelsComponent implements OnInit {
     if(this.readyForSave)
     {
       let userData = this._loginDataService.loginData.getUserData("garageCar");
-      userData.carList.push(new CarData(this._selectedManufacturer, this._selectedVehicle, parseInt(this._selectedYear)));
+      let car:CarData = new CarData(this._selectedManufacturer, this._selectedVehicle, parseInt(this._selectedYear));
+      if(userData.carList.length == 0)
+      {
+        userData.selectedCar = car;
+      }
+      userData.carList.push(car);
 
       this._loginDataService.loginData.storeUserData("garageCar", userData);
 
