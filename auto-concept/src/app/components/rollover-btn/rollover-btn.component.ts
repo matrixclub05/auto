@@ -8,13 +8,7 @@ import {Output} from "@angular/core/src/metadata/directives";
 })
 export class RolloverBtnComponent implements OnInit {
   @Input() text: string;
-  @Output() onClick: EventEmitter<string>;
-  onBtnClick(){
-    if(this.onClick){
-      this.onClick.emit(this.text);
-    }
 
-  }
   constructor() { }
 
   ngOnInit() {
