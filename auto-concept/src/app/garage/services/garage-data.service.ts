@@ -73,30 +73,27 @@ export class GarageDataService {
     return vehicleYear;
   }
 
-  protected parseTEMP()
+  protected parseTEMP(p:Object)
   {
     let carEngineTypes = ['Дизельный', "Бензиновый", 'LPG'];
-    let carEngineCapacity = ['2.0', "2.6", '1.8', '1.6', '2.0T', '2.6T', '3.0T'];
-    let transmissionType = ['МКПП', "АКПП", 'РКПП', 'Вариатор'];
-    var p = this._sections["Грузовики"];
+    let carEngineCapacity = ['2.0', '1.8', '1.6', '2.0T', '3.0T'];
+    let transmissionType = ['МКПП', "АКПП" ];
     var out = {};
     for (var manufacturer in p) {
+      var i = 0;
       for(var model in p[manufacturer])
       {
-        if(!out[manufacturer])
+        let obj:ICarAccessory = <ICarAccessory>{};
+        obj.engineCapacity = carEngineCapacity;
+        obj.engineType = carEngineTypes;
+        obj.transmissionType = transmissionType;
+        obj.photoPath = ("assets/" + manufacturer + "-" + model + "/" + model + ".jpg").toLowerCase();
+        out[manufacturer + " " +model] = obj;
+        if(i == 2)
         {
-          out[manufacturer] = {};
+          break;
         }
-        if(!out[manufacturer][model])
-        {
-          out[manufacturer][model] = {};
-        }
-
-        let obj:IAccessory = <IAccessory>{};
-        obj.engineCapacity = carEngineCapacity[Math.floor(Math.random() * carEngineCapacity.length)];
-        obj.engineType = carEngineTypes[Math.floor(Math.random() * carEngineTypes.length)];
-        obj.transmissionType = transmissionType[Math.floor(Math.random() * transmissionType.length)];
-        out[manufacturer][model] = obj;
+        i++;
       }
     }
 
@@ -104,17 +101,34 @@ export class GarageDataService {
     return out;
   }
 
-  public getVehicleAccesories(section:string, manufacturer:string, modelName:string):IAccessory
+  public getCarWithAccessory(manufacturer:string, modelName:string):ICarAccessory
   {
-    return <IAccessory>{};
+    let vehicleAccessories:ICarAccessory = <ICarAccessory>{};
+    if(Cars.accessoryData)
+    {
+      if(Cars.accessoryData[manufacturer  + " " +modelName])
+      {
+        if(Cars.accessoryData[manufacturer + " " +modelName])
+        {
+          vehicleAccessories = <ICarAccessory>(Cars.accessoryData[manufacturer][modelName]);
+        }
+      }
+    }
+    return vehicleAccessories;
+  }
+
+  public getCarsWithAccessory()
+  {
+    return Cars.accessoryData;
   }
 }
 
-export interface IAccessory
+export interface ICarAccessory
 {
-  engineCapacity:string;
-  engineType:string;
-  transmissionType:string;
+  engineCapacity:string[];
+  engineType:string[];
+  transmissionType:string[];
+  photoPath:string;
 }
 
 export interface ServiceRow
