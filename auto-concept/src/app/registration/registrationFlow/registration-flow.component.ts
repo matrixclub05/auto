@@ -56,6 +56,9 @@ export class RegistrationFlowComponent{
 class UserInputInfo
 {
   public login:string = "";
+  public firstName: string = "";
+  public lastName: string = "";
+  public middleName: string = "";
   public password:string = "";
 }
 
