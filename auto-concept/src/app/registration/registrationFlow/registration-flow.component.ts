@@ -37,7 +37,7 @@ export class RegistrationFlowComponent{
 
   protected logUserIn():void
   {
-    this._loginService.tryLoginUser(this._userInputInfo.login, this._userInputInfo.password);
+    this._loginService.tryLoginUser(this._userInputInfo);
     this._currentModal.close();
   }
 
@@ -53,9 +53,12 @@ export class RegistrationFlowComponent{
 
 }
 
-class UserInputInfo
+export class UserInputInfo
 {
   public login:string = "";
+  public firstName: string = "";
+  public lastName: string = "";
+  public middleName: string = "";
   public password:string = "";
 }
 

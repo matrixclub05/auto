@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Router, ActivatedRoute, Params} from "@angular/router";
+import {LoginServiceService} from "../../../global-services/login-service.service";
+
 
 @Component({
   selector: 'app-profile',
@@ -8,9 +9,7 @@ import {Router, ActivatedRoute, Params} from "@angular/router";
 })
 export class ProfileComponent implements OnInit {
 
-  constructor( private route: ActivatedRoute) {
-
-
+  constructor( private _loginService:LoginServiceService) {
 
   }
 
