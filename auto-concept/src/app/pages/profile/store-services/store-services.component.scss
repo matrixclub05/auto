@@ -1,7 +1,15 @@
 :host{
   display: block;
+  margin-bottom: 15px;
 }
+.services {
+  background-image: url('assets/car.jpg');
+  background-size: 100%;
+  border-top: 2px solid #df1f3d;
+  border-bottom: 2px solid #df1f3d;
+  padding: 20px 0;
 
+}
 .rollover {
   padding: 0;
   overflow: hidden;
@@ -54,4 +62,5 @@
     font-weight: bold;
   }
 }
+
 
