@@ -36,6 +36,7 @@ import {SignUpForServiceComponent} from "./garage/sign-up-for-service/sign-up-fo
 import { AboutComponent } from './pages/about/about.component';
 import { PersonalComponent } from './pages/profile/personal/personal.component';
 import { ServiceComponent } from './pages/service/service.component';
+import {CarsComponent} from "./pages/shop/cars/cars.component";
 
 
 @NgModule({
@@ -62,6 +63,7 @@ import { ServiceComponent } from './pages/service/service.component';
     CategoriesComponent,
     ServiceBookComponent,
     CarsSelectorComponent,
+    CarsComponent,
     StoreServicesComponent,
     RolloverBtnComponent,
     SignUpForServiceComponent,
