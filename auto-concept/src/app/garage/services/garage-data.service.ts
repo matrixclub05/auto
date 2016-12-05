@@ -72,6 +72,49 @@ export class GarageDataService {
     }
     return vehicleYear;
   }
+
+  protected parseTEMP()
+  {
+    let carEngineTypes = ['Дизельный', "Бензиновый", 'LPG'];
+    let carEngineCapacity = ['2.0', "2.6", '1.8', '1.6', '2.0T', '2.6T', '3.0T'];
+    let transmissionType = ['МКПП', "АКПП", 'РКПП', 'Вариатор'];
+    var p = this._sections["Грузовики"];
+    var out = {};
+    for (var manufacturer in p) {
+      for(var model in p[manufacturer])
+      {
+        if(!out[manufacturer])
+        {
+          out[manufacturer] = {};
+        }
+        if(!out[manufacturer][model])
+        {
+          out[manufacturer][model] = {};
+        }
+
+        let obj:IAccessory = <IAccessory>{};
+        obj.engineCapacity = carEngineCapacity[Math.floor(Math.random() * carEngineCapacity.length)];
+        obj.engineType = carEngineTypes[Math.floor(Math.random() * carEngineTypes.length)];
+        obj.transmissionType = transmissionType[Math.floor(Math.random() * transmissionType.length)];
+        out[manufacturer][model] = obj;
+      }
+    }
+
+    debugger;
+    return out;
+  }
+
+  public getVehicleAccesories(section:string, manufacturer:string, modelName:string):IAccessory
+  {
+    return <IAccessory>{};
+  }
+}
+
+export interface IAccessory
+{
+  engineCapacity:string;
+  engineType:string;
+  transmissionType:string;
 }
 
 export interface ServiceRow
