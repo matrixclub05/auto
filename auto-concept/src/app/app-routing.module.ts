@@ -5,6 +5,7 @@ import {ProfileComponent} from "./pages/profile/component/profile.component";
 import {CarStoreComponent} from "./pages/profile/car-store/car-store.component";
 import {StartComponent} from "./pages/profile/start/start.component";
 import {AboutComponent} from "./pages/about/about.component";
+import {PersonalComponent} from "./pages/profile/personal/personal.component";
 
 const appRoutes: Routes = [
   {
@@ -18,6 +19,10 @@ const appRoutes: Routes = [
       {
         path: 'car-store',
         component: CarStoreComponent
+      },
+      {
+        path: 'personal',
+        component: PersonalComponent
       }
     ]
   },

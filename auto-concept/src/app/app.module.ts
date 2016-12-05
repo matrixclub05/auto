@@ -34,6 +34,7 @@ import { StoreServicesComponent } from './pages/profile/store-services/store-ser
 import { RolloverBtnComponent } from './components/rollover-btn/rollover-btn.component';
 import {SignUpForServiceComponent} from "./garage/sign-up-for-service/sign-up-for-service.component";
 import { AboutComponent } from './pages/about/about.component';
+import { PersonalComponent } from './pages/profile/personal/personal.component';
 
 
 @NgModule({
@@ -63,7 +64,8 @@ import { AboutComponent } from './pages/about/about.component';
     StoreServicesComponent,
     RolloverBtnComponent,
     SignUpForServiceComponent,
-    AboutComponent
+    AboutComponent,
+    PersonalComponent
   ],
   imports: [
     BrowserModule,
