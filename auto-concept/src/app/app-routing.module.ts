@@ -4,6 +4,7 @@ import {MainComponent} from "./pages/main/component/main.component";
 import {ProfileComponent} from "./pages/profile/component/profile.component";
 import {CarStoreComponent} from "./pages/profile/car-store/car-store.component";
 import {StartComponent} from "./pages/profile/start/start.component";
+import {AboutComponent} from "./pages/about/about.component";
 
 const appRoutes: Routes = [
   {
@@ -17,11 +18,12 @@ const appRoutes: Routes = [
       {
         path: 'car-store',
         component: CarStoreComponent
-
       }
     ]
   },
-  { path: '', component: MainComponent }
+
+  { path: '', component: MainComponent },
+  { path: 'about', component: AboutComponent }
 
 ];
 @NgModule({

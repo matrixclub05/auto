@@ -33,6 +33,7 @@ import {NativeWindowTools} from "./global-services/NativeWindowTools";
 import { StoreServicesComponent } from './pages/profile/store-services/store-services.component';
 import { RolloverBtnComponent } from './components/rollover-btn/rollover-btn.component';
 import {SignUpForServiceComponent} from "./garage/sign-up-for-service/sign-up-for-service.component";
+import { AboutComponent } from './pages/about/about.component';
 
 
 @NgModule({
@@ -61,7 +62,8 @@ import {SignUpForServiceComponent} from "./garage/sign-up-for-service/sign-up-fo
     CarsSelectorComponent,
     StoreServicesComponent,
     RolloverBtnComponent,
-    SignUpForServiceComponent
+    SignUpForServiceComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
