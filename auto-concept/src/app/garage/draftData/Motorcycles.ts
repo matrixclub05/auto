@@ -3,6 +3,3479 @@
  */
 export class Motorcycles {
 
+  public static accessoryData = {
+    "AMERICAN IRONHORSE": {
+      "CLASSIC": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "LEGEND": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "OUTLAW": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "RANGER": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "SLAMMER": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "TEJAS": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "THUNDER": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "RANGER T": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "STALKER": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "TEXAS CHOPPER": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "LSC": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "BANDERA": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "CLASSIC CHOP": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "JUDGE": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      }
+    },
+    "APRILIA": {
+      "ATLANTIC 500": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "ETV 1000 CAPONORD": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "MOJITO CUSTOM 50": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "MOJITO RETRO 50": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "PEGASO 650": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "RALLY 50 (AIR COOLED)": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "RS 125": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "RS 250": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "RST1000 FUTURA": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "RSV MILLE": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "RSV MILLE R": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "SCARABEO 125": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "SCARABEO 150": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "SCARABEO 50 2T": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "SCARABEO 50 DITECH": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "SL1000 FALCO": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "RS 50": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "SCARABEO 100": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "SCARABEO 50 4T": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "SR 50 DITECH": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "RSV MILLE R HAGA": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "TUONO FIGHTER 1000": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "TUONO RACER 1000": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "RSV 1000 R FACTORY": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "RSV MILLE R NERA": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "SCARABEO 250": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "TUONO 1000 R": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "TUONO 1000 R FACTORY": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "TUONO 125": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "TUONO 50": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "RSV 1000 R": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "PEGASO 650 TRAIL": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "RXV 450": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "RXV 550": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "SR50R FACTORY": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "SXV 450": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "SXV 550": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "MOJITO 150": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "PEGASO 650 FACTORY": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "SCARABEO 500 IE": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "SPORTCITY 250": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "MANA 850": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "SCARABEO 200": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "SL 750 SHIVER": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "SPORTCITY 125": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "MANA 850 GT ABS": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "SMV 750 DORSODURO": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "SPORTCITY 50": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "SPORTCITY CUBE 250": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "DORSODURO 750": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "RSV4 FACTORY": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "RSV4 R": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "SHIVER 750": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "DORSODURO 1200": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "RSV4 FACTORY SE": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "SR 50": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "TUONO V4 R": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "DORSODURO 750 ABS": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "RSV4 FACTORY APRC ABS": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "RSV4 R APRC ABS": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "SR 50 R REPLICA SBK": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "SR MOTARD 50": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "TUONO V4 R APRC": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "CAPONORD 1200": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      }
+    },
+    "ATK": {
+      "125 CC": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "250 ENDURO": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "260 ENDURO": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "50 MX": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "600 DT": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "600 MT": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "605 ENDURO": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "350 ENDURO": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "125 ENDURO": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "50 MXLQ": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "500 DT": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      }
+    },
+    "BIG DOG": {
+      "BOXER": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "BULLDOG": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "HUSKY": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "MASTIFF": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "PITBULL": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "PRO SPORT": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "VINTAGE SPORT": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "WOLF": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "CHOPPER": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "CHOPPER DT": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "RIDGEBACK": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "CHOPPER BDM": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "CHOPPER RT": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "K-9": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "MUTT": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "COYOTE": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "K-9 EFI": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "MASTIFF EFI": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "BULLDOG SPORT": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "K-9 250": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      }
+    },
+    "BUELL": {
+      "BLAST": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "M2 CYCLONE": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "S3 THUNDERBOLT": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "S3T THUNDERBOLT": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "X1 LIGHTNING": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "M2L CYCLONE": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "X1W WHITE LIGHTNING": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "XB9R FIREBOLT": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "XB9S LIGHTNING": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "XB9SX LIGHTNING CITYX": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "XB12R FIREBOLT": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "XB12S LIGHTNING": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "XB9SL": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "LIGHTNING CITYX XB9SX": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "XB12SCG LIGHTNING": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "XB9SX LIGHTNING": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "XB12X ULYSSES": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "XB12SS LIGHTNING LONG": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "XB12STT LIGHTNING": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "1125R": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "XB12STT LIGHTNING SUPER TT": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "XB12XT ULYSSES": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "1125CR": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "XB12XP ULYSSES POLICE": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      }
+    },
+    "DUCATI": {
+      "748": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "749": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "750": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "800": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "848": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "900": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "996": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "999": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "1098": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "1198": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "748 MONOPOSTO": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "748R": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "748S": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "748S MONOPOSTO": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "750 SPORT": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "996 BIPOSTO": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "996 MONOPOSTO": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "996R": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "996S": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "996S MONOPOSTO": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "MH900E": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "MONSTER 400": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "MONSTER 400 METALLIC": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "MONSTER 600 DARK": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "MONSTER 750": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "MONSTER 750 DARK": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "MONSTER 750 METALLIC": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "MONSTER 900": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "MONSTER 900 CROMO": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "MONSTER 900 DARK": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "MONSTER 900 METALLIC": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "MONSTER 900S": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "MONSTER S4": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "ST2": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "ST4": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "748R BIPOSTO": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "998 BIPOSTO": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "998 MONOPOSTO": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "998R": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "998S": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "998S BOSTROM": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "MONSTER 400 DARK": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "MONSTER 620": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "MONSTER 620S": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "MONSTER S4 FOGARTY": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "ST4S": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "749S": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "800 SPORT": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "999R": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "999R FILA": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "999S": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "MONSTER 1000 DARK": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "MONSTER 1000S": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "MONSTER 400S": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "MONSTER 800S": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "749R": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "998 F EDITION BIPOSTO": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "998 F EDITION MONOPOSTO": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "998 MATRIX": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "MONSTER 1000": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "MONSTER 620 CAPIREX": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "MONSTER 620 MATRIX": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "MONSTER 800": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "ST3": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "MONSTER 620 DARK": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "MONSTER S2R": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "MONSTER S2R DARK": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "MULTISTRADA 1000 DS": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "MULTISTRADA 620": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "MULTISTRADA 620 DARK": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "ST4S ABS": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "999R XEROX": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "MONSTER S2R 1000": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "MONSTER S4R": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "MONSTER S4RS": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "MONSTER S4RS TESTASTRETTA": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "MULTISTRADA 1000S DS": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "ST3S ABS": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "1098 S": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "1098 S TRICOLORE": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "DESMOSEDICI RR": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "GT1000": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "MONSTER S2R 800": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "MONSTER S4R TESTASTRETTA": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "MULTISTRADA 1100": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "MULTISTRADA 1100 S": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "1098 R": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "HYPERMOTARD 1100": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "HYPERMOTARD 1100 S": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "MONSTER 696": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "MONSTER S4RS TRICOLORE": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "1098 R BAYLISS LE": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "1198 S": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "GT1000 TOURING": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "MONSTER 1100": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "MONSTER 1100 S": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "1198 R CORSE": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "1198 S CORSE": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "HYPERMOTARD 1100 EVO": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "HYPERMOTARD 1100 EVO SP": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "HYPERMOTARD 796": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "MULTISTRADA 1200": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "MULTISTRADA 1200 S": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "STREETFIGHTER": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "STREETFIGHTER S": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "848 EVO": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "MONSTER 796": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "1199 PANIGALE": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "1199 PANIGALE S": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "1199 PANIGALE S TRICOLORE": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "848 EVO CORSE SE": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "DIAVEL": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "DIAVEL AMG": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "DIAVEL CARBON": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "DIAVEL CROMO": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "MULTISTRADA 1200 S PIKES PEAK": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "MULTISTRADA 1200 S SPORT": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "MULTISTRADA 1200 S TOURING": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "1199 PANIGALE R": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "DIAVEL DARK": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "DIAVEL STRADA": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "HYPERMOTARD": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "HYPERMOTARD SP": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "MULTISTRADA 1200 S GRANTURISMO": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "899 PANIGALE": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      }
+    },
+    "GAS GAS": {
+      "ENDUCROSS EC 200": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "ENDUCROSS EC 250": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "ENDUCROSS EC 300": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "PAMPERA 280": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      }
+    },
+    "HARLEY DAVIDSON": {
+      "FLHR ROAD KING": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "FLHRCI ROAD KING CLASSIC": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "FLHRI ROAD KING": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "FLHT ELECTRA GLIDE STANDARD": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "FLHTC ELECTRA GLIDE CLASSIC": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "FLHTCI ELECTRA GLIDE CLASSIC": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "FLHTCUI ELECTRA GLIDE ULTRA CLASSIC": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "FLSTC HERITAGE SOFTAIL CLASSIC": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "FLSTCI HERITAGE SOFTAIL CLASSIC": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "FLSTF FAT BOY": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "FLSTFI FAT BOY": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "FLSTS HERITAGE SPRINGER": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "FLSTSI HERITAGE SPRINGER": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "FLTR ROAD GLIDE": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "FLTRI ROAD GLIDE": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "FLTRSEI2 SCREAMIN EAGLE ROAD GLIDE": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "FXD DYNA SUPER GLIDE": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "FXDL DYNA LOW RIDER": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "FXDWG DYNA WIDE GLIDE": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "FXDWG2": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "FXDX DYNA SUPER GLIDE SPORT": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "FXDXT DYNA SUPER GLIDE T-SPORT": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "FXST SOFTAIL STANDARD": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "FXSTB NIGHT TRAIN": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "FXSTBI NIGHT TRAIN": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "FXSTD SOFTAIL DEUCE": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "FXSTDI SOFTAIL DEUCE": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "FXSTI SOFTAIL STANDARD": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "FXSTS SPRINGER SOFTAIL": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "FXSTSI SPRINGER SOFTAIL": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "XL1200C SPORTSTER 1200 CUSTOM": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "XL1200S SPORTSTER 1200 SPORT": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "XL883C SPORTSTER 883 CUSTOM": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "XLH1200": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "XLH883": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "XLH883HUG SPORTSTER 883 HUGGER": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "FLHRSEI SCREAMIN EAGLE ROAD KING": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "FXDWG3": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "VRSCA V-ROD": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "XL883R SPORTSTER 883 ROADSTER": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "FLHRSEI2 SCREAMIN EAGLE ROAD KING 2": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "FLHTI ELECTRA GLIDE STANDARD": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "FXSTDSE SCREAMIN EAGLE SOFTAIL DEUC": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "FLHRS ROAD KING CUSTOM": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "FLHRSI ROAD KING CUSTOM": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "FLHTCSE SCREAMIN EAGLE ELECTRA GLID": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "FXDI DYNA SUPER GLIDE": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "FXDLI DYNA LOW RIDER": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "FXDWGI DYNA WIDE GLIDE": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "FXDXI DYNA SUPER GLIDE SPORT": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "FXSTDSE2 SCREAMIN EAGLE SOFTAIL DEU": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "VRSCB V-ROD": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "XL1200R SPORTSTER 1200 ROADSTER": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "XL883 SPORTSTER": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "FLHTCSE2 SCREAMIN EAGLE ELECTRA GLI": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "FLSTFSE SCREAMIN EAGLE FAT BOY": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "FLSTN SOFTAIL DELUXE": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "FLSTNI SOFTAIL DELUXE": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "FLSTSC SOFTAIL SPRINGER CLASSIC": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "FLSTSCI SOFTAIL SPRINGER CLASSIC": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "FXDC SUPER GLIDE CUSTOM": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "FXDCI SUPER GLIDE CUSTOM": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "VRSCSE SCREAMIN EAGLE V-ROD": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "XL883L SPORTSTER 883 LOW": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "FLHTCUSE SCREAMIN EAGLE ULTRA CLASS": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "FLHX STREET GLIDE": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "FLHXI STREET GLIDE": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "FLST HERITAGE SOFTAIL": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "FLSTFSE2 SCREAMIN EAGLE FAT BOY": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "FLSTI HERITAGE SOFTAIL": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "FXDBI STREET BOB": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "FXDI35 DYNA 35TH ANNIVERSARY SUPER": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "VRSCD NIGHT ROD": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "VRSCR STREET ROD": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "VRSCSE2 SCREAMIN EAGLE V-ROD 2": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "VRXSE SCREAMIN EAGLE DESTROYER": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "XL1200L SPORTSTER 1200 LOW": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "FLHRC ROAD KING CLASSIC": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "FLHRSE3 SCREAMIN EAGLE ROAD KING": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "FLHTCU ELECTRA GLIDE ULTRA CLASSIC": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "FLHTCUSE2 SCREAMIN EAGLE ULTRA CLAS": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "FXDB STREET BOB": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "FXDSE SCREAMIN EAGLE DYNA": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "FXSTC SOFTAIL CUSTOM": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "FXSTSSE SCREAMIN EAGLE SOFTAIL SPRI": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "VRSCAW V-ROD": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "VRSCDX NIGHT ROD SPECIAL": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "VRSCX V-ROD": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "XL1200N SPORTSTER 1200 NIGHTSTER": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "XL50 50TH ANNIVERSARY SPORTSTER": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "FLHRSE4 SCREAMIN EAGLE ROAD KING": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "FLHTCUSE3 SCREAMIN EAGLE ULTRA CLAS": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "FLSTSB CROSS BONES": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "FXCW ROCKER": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "FXCWC ROCKER C": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "FXDF FAT BOB": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "FXDSE2 SCREAMIN EAGLE DYNA": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "FXSTSSE2 SCREAMIN EAGLE SOFTAIL SPR": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "FLHTCUSE4 CVO ULTRA CLASSIC ELECTRA": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "FLHTCUTG TRI GLIDE ULTRA CLASSIC": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "FLTRSE3 CVO ROAD GLIDE": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "FXDFSE CVO DYNA FAT BOB": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "FXSTSSE3 CVO SOFTAIL SPRINGER": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "VRSCF V-ROD MUSCLE": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "XL883N IRON 883": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "XR1200": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "FLHTCUSE5 CVO ULTRA CLASSIC ELECTRA": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "FLHTK ELECTRA GLIDE ULTRA LIMITED": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "FLHXSE CVO STREET GLIDE": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "FLHXXX STREET GLIDE TRIKE": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "FLSTFB FAT BOY LO": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "FLSTSE CVO SOFTAIL CONVERTIBLE": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "FLTRX ROAD GLIDE CUSTOM": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "FXDFSE2 CVO DYNA FAT BOB": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "XL1200X FORTY-EIGHT": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "FLHTCUSE6 CVO ULTRA CLASSIC ELECTRA": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "FLHXSE2 CVO STREET GLIDE": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "FLSTSE2 CVO SOFTAIL CONVERTIBLE": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "FLTRU ROAD GLIDE ULTRA": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "FLTRUSE CVO ROAD GLIDE ULTRA": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "FXS BLACKLINE": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "XL883L SUPERLOW": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "XR1200X": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "FLD SWITCHBACK": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "FLHTCUSE7 CVO ULTRA CLASSIC ELECTRA": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "FLHXSE3 CVO STREET GLIDE": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "FLS SOFTAIL SLIM": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "FLSTSE3 CVO SOFTAIL CONVERTIBLE": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "FLTRXSE CVO ROAD GLIDE CUSTOM": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "VRSCDX ANN V-ROD ANNIVERSARY EDITIO": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "XL1200V SEVENTY-TWO": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "FLHRSE5 CVO ROAD KING": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "FLHTCUSE8 CVO ULTRA CLASSIC ELECTRA": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "FLTRXSE2 CVO ROAD GLIDE CUSTOM": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "FXSB BREAKOUT": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "FLHRSE6 CVO ROAD KING": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "FLHTCUTG TRI GLIDE ULTRA": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "FLHTKSE CVO LIMITED": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "FLHXS STREET GLIDE SPECIAL": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "FLSTNSE CVO SOFTAIL DELUXE": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "FXDL LOW RIDER": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "XL1200T SUPERLOW 1200T": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "XG500 STREET 500": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "XG750 STREET 750": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      }
+    },
+    "KAWASAKI": {
+      "BN125 ELIMINATOR": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "EN500C VULCAN 500 LTD": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "EX250F NINJA 250R": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "EX500 NINJA 500R": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "JH1100 1100ZXI": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "JH1100 ULTRA 130": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "JH1200 ULTRA 150": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "JS750 SXI PRO": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "JT1100 1100STX D.I.": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "JT900 900STS": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "JT900 900STX": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "KAF300 MULE 520": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "KAF300 MULE 550": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "KAF620 MULE 3000": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "KAF620 MULE 3010 4X4": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "KAF620 MULE 3020": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "KAF950 MULE 2510 DIESEL": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "KDX200": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "KDX220R": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "KE100": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "KEF300 LAKOTA SPORT": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "KL250 SUPER SHERPA": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "KLF220 BAYOU": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "KLF300 BAYOU 2X4": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "KLF300 BAYOU 4X4": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "KLR250": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "KLR650": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "KLX300R": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "KSF250 MOJAVE": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "KVF300 PRAIRIE 2X4": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "KVF300 PRAIRIE 4X4": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "KVF400 PRAIRIE 2X4": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "KVF400 PRAIRIE 4X4": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "KX100": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "KX125": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "KX250": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "KX500": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "KX60": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "KX65": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "KX85": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "KZ1000C/P POLICE": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "VN1500E VULCAN 1500 CLASSIC": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "VN1500G VULCAN 1500 NOMAD": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "VN1500J/R VULCAN 1500 DRIFTER": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "VN1500L VULCAN NOMAD FI": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "VN1500N VULCAN 1500 CLASSIC FI": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "VN750A VULCAN 750": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "VN800A VULCAN 800": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "VN800B VULCAN 800 CLASSIC": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "VN800E VULCAN 800 DRIFTER": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "W650": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "ZG1000 CONCOURS": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "ZG1200 VOYAGER XII": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "ZR-7S": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "ZRX1200": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "ZX1100 NINJA ZX-11": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "ZX1200 NINJA ZX-12R": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "ZX600 NINJA ZX-6": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "ZX600 NINJA ZX-6R": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "ZX750 NINJA ZX-7R": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "ZX900 NINJA ZX-9R": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "JT1200 1200STX-R": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "KLX110": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "KVF650 PRAIRIE 4X4": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "VN1500P VULCAN 1500 MEAN STREAK": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "ZZR1200": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "JS800 800 SX-R": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "JT1200 STX-12F": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "KAF950 MULE 3010 DIESEL 4X4": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "KDX50": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "KFX400": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "KFX50": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "KFX80": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "KLF250 BAYOU": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "KLX125": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "KLX125L": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "KLX400R": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "KLX400SR": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "KVF360 PRAIRIE 2X4": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "KVF360 PRAIRIE 4X4": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "VN1600A VULCAN 1600 CLASSIC": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "Z1000": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "ZX600 NINJA ZX6-RR": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "ZX636 NINJA ZX-6R": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "ZZR 600": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "JT1500 STX-15F": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "KFX250 MOJAVE": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "KFX700": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "KVF700 PRAIRIE 4X4": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "KX250F": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "VN1600B VULCAN 1600 MEAN STREAK": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "VN2000A VULCAN 2000": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "ZX1000 NINJA ZX-10R": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "KAF400 MULE 600": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "KAF400 MULE 610 4X4": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "KAF620 MULE 3010 TRANS 4X4": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "KVF650 BRUTE FORCE 4X4": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "KVF750 BRUTE FORCE 4X4I": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "VN1600D VULCAN 1600 NOMAD": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "VN2000D VULCAN 2000 LIMITED": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "Z750S": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "EX650 NINJA 650R": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "KLX250S": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "KVF650 BRUTE FORCE 4X4I": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "KX450F": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "VN2000E VULCAN 2000 CLASSIC": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "VN2000F VULCAN 2000 CLASSIC LT": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "VN900B VULCAN 900 CLASSIC": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "VN900D VULCAN 900 CLASSIC LT": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "ZX1400 NINJA ZX-14": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "JT1500 ULTRA 250X": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "JT1500 ULTRA LX": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "KAF950 MULE 3010 TRANS 4X4 DIESEL": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "KFX90": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "VN900C VULCAN 900 CUSTOM": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "KFX450R": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "KLE650 VERSYS": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "KLX140": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "KLX140L": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "KLX450R": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "KRF750 TERYX 4X4": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "KRF750 TERYX FI 4X4 LE": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "KRF750 TERYX NRA OUTDOORS": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "ZG1400 CONCOURS": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "ZG1400 CONCOURS ABS": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "ER-6N": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "JT1500 STX": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "JT1500 ULTRA 260LX": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "JT1500 ULTRA 260X": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "KAF620 MULE 4000": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "KAF620 MULE 4010 4X4": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "KAF620 MULE 4010 TRANS 4X4": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "KAF950 MULE 4010 DIESEL 4X4": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "KAF950 MULE 4010 TRANS 4X4 DIESEL": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "KLX250SF": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "KRF750 TERYX FI 4X4": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "KRF750 TERYX FI 4X4 LE SPORT": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "KRF750 TERYX FI 4X4 SPORT": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "VN1700 VULCAN 1700 CLASSIC": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "VN1700 VULCAN 1700 CLASSIC LT": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "VN1700 VULCAN 1700 NOMAD": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "VN1700 VULCAN 1700 VOYAGER": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "VN1700 VULCAN 1700 VOYAGER ABS": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "Z750": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "KAF400 MULE 610 4X4 XC": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "KLX110L": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "JT1500 ULTRA 300 LX": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "JT1500 ULTRA 300 X": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "KRF750 TERYX FI 4X4 LE SGE": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "VN1700 VULCAN 1700 VAQUERO": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "Z750R": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "ZX1000 NINJA 1000": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "ZX1000 NINJA ZX-10R ABS": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "EX650 NINJA 650": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "KRT750 TERYX4 4X4": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "KRT750 TERYX4 4X4 EPS": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "KRT750 TERYX4 4X4 EPS LE": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "KRT750 TERYX4 4X4 EPS LE CAMO": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "KVF300 BRUTE FORCE": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "KVF750 BRUTE FORCE 4X4I EPS": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "ZX1000 NINJA 1000 ABS": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "ZX1400 NINJA ZX-14R": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "EX300 NINJA 300": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "EX300 NINJA 300 ABS": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "EX650 NINJA 650 ABS": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "KRF750 TERYX FI 4X4 LE CAMO": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "KRT750 TERYX4 4X4 EPS CAMO": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "ZX1400 NINJA ZX-14R ABS": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "ZX636 NINJA ZX-6R ABS": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "EX300 NINJA 300 ABS SE": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "EX300 NINJA 300 SE": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "JT1500 ULTRA 310LX": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "JT1500 ULTRA 310R": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "JT1500 ULTRA 310X": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "JT1500 ULTRA 310X SE": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "KAF400 MULE 610 4X4 XC SE": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "KLE650 VERSYS ABS": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "KLR650 NEW EDITION": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "KRT800 TERYX": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "KRT800 TERYX CAMO": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "KRT800 TERYX LE": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "KRT800 TERYX4": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "KRT800 TERYX4 CAMO": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "KRT800 TERYX4 LE": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "VN1700 VULCAN 1700 NOMAD ABS": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "VN1700 VULCAN 1700 VAQUERO ABS": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "VN1700 VULCAN 1700 VAQUERO ABS SE": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "ZR1000 Z1000 ABS": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "ZX1000 NINJA ZX-10R 30TH ANNIVERSAR": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "ZX1000 NINJA ZX-10R ABS 30TH ANNIVE": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "ZX636 NINJA ZX-6R 30TH ANNIVERSARY": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "ZX636 NINJA ZX-6R ABS 30TH ANNIVERS": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      }
+    },
+    "KTM": {
+      "125 EXC": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "125 SX": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "125 SXS": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "200 EXC": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "200 MXC": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "250 EXC": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "250 MXC": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "250 SX": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "250 SXS": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "300 EXC": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "300 MXC": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "380 EXC": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "380 MXC": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "380 SX": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "400 EXC": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "400 LC4": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "400 MXC": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "400 SX": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "50 JR ADVENTURE": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "50 MINI ADVENTURE": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "50 SX PRO SR LC": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "520 EXC": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "520 MXC": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "520 SX": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "640 ADVENTURE": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "640 DUKE II": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "640 SUPERMOTO": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "660 RALLY": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "200 SX": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "250 EXC 4-STROKE": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "450 EXC": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "450 MXC": {
+        "engineCapacity": "1.6",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "450 SX-F": {
+        "engineCapacity": "3.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "450 SXS": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "525 EXC": {
+        "engineCapacity": "1.8",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "525 MXC": {
+        "engineCapacity": "2.0",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "525 SX": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "625 SXC": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "950 ADVENTURE": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "450 SMS": {
+        "engineCapacity": "2.6",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "525 SMR": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "625 SMC": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "950 ADVENTURE S": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "250 SX-F": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "450 SMR": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "950 SUPERMOTO": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "990 SUPER DUKE": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "200 XC": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "200 XC-W": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "250 SXS-F": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "250 XC": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "250 XC-W": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "250 XCF-W": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "300 XC": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "300 XC-W": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "450 XC-F": {
+        "engineCapacity": "2.6T",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "450 XC-W": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "525 EXC-G": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "525 XC-G": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "560 SMR": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "990 ADVENTURE": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "990 ADVENTURE S": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "105 SX": {
+        "engineCapacity": "2.6T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "250 XC-F": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "400 XC-W": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      },
+      "525 XC-W": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "690 SUPERMOTO": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "85 SX (17/14)": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "85 SX (19/16)": {
+        "engineCapacity": "3.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "990 SUPER DUKE R": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "1190 RC8": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "МКПП"
+      },
+      "450 EXC-R": {
+        "engineCapacity": "1.8",
+        "engineType": "Бензиновый",
+        "transmissionType": "Вариатор"
+      },
+      "450 XC": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "525 XC": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "530 EXC-R": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "АКПП"
+      },
+      "530 XC-W": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "990 SUPERMOTO R": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "450SX": {
+        "engineCapacity": "2.0T",
+        "engineType": "Дизельный",
+        "transmissionType": "АКПП"
+      },
+      "505SX": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "690 DUKE": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "690 ENDURO R": {
+        "engineCapacity": "2.6",
+        "engineType": "Дизельный",
+        "transmissionType": "Вариатор"
+      },
+      "990 ADVENTURE R": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "1190 RC8 R": {
+        "engineCapacity": "3.0T",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "990 SUPERMOTO T": {
+        "engineCapacity": "2.0T",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "350 SX-F": {
+        "engineCapacity": "2.0",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "990 ADVENTURE DAKAR EDITION": {
+        "engineCapacity": "2.0",
+        "engineType": "LPG",
+        "transmissionType": "РКПП"
+      },
+      "990 SUPERMOTO": {
+        "engineCapacity": "2.0T",
+        "engineType": "LPG",
+        "transmissionType": "МКПП"
+      },
+      "1190 RC8 R RACE": {
+        "engineCapacity": "2.6T",
+        "engineType": "Дизельный",
+        "transmissionType": "РКПП"
+      },
+      "450 SX-F FACTORY EDITION": {
+        "engineCapacity": "1.6",
+        "engineType": "LPG",
+        "transmissionType": "АКПП"
+      },
+      "1190 ADVENTURE": {
+        "engineCapacity": "2.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "РКПП"
+      },
+      "1190 ADVENTURE R": {
+        "engineCapacity": "1.8",
+        "engineType": "LPG",
+        "transmissionType": "Вариатор"
+      },
+      "350 EXC-F": {
+        "engineCapacity": "1.6",
+        "engineType": "Бензиновый",
+        "transmissionType": "МКПП"
+      }
+    }
+  };
+
     public static data = {
         "AMERICAN IRONHORSE": {
             "CLASSIC": [
