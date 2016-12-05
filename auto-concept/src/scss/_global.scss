@@ -73,3 +73,43 @@ app-root {
 .pull-right {
   float: right;
 }
+
+.breadcrumbs {
+  li {
+    display: inline-block;
+    padding: 0 10px;
+
+  }
+  .row {
+    height: 100%;
+  }
+  .sub-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    background: #fff;
+    &>li>a{
+
+    }
+  }
+  .nav-link{
+    color: #fff;
+    text-transform: uppercase;
+
+    &::after{
+      content: '';
+      display: block;
+      width: 0;
+      border-bottom: 2px solid #fff;
+      transition: width 0.2s ease;
+      margin: 0 auto;
+    }
+    &:hover{
+      &::after{
+        width: 100%;
+        transition: width 0.2s ease;
+
+      }
+    }
+  }
+}
