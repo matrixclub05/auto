@@ -40,6 +40,7 @@
         <div>{{item.transmissionType}}</div>
         <!--<img src="{{item.photo}}" width="100%"/>-->
         <img src="assets/default-car-image.jpg" width="100%"/>
+        <button class="btn btn-primary" (click)="haveARide(item)">Прокатиться</button>
       </div>
     </div>
     <div *ngIf="_carsToDisplay.length == 0">
