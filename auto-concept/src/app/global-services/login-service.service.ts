@@ -6,14 +6,13 @@ import {UserInputInfo} from "../registration/registrationFlow/registration-flow.
 @Injectable()
 export class LoginServiceService {
 
-  private __DEFAULT_LOGIN_KEY:string = "___DEFAULT_LOGIN_KEY_4320984";
+  private __DEFAULT_LOGIN_KEY: string = "___DEFAULT_LOGIN_KEY_4320984";
   private _currentLoginStrategy: LoginStrategies = LoginStrategies.LocalStorageFlow;
-  private _loginData:LoggedInData = null;
-
+  private _loginData: LoggedInData = null;
+  private _currentUser: UserInputInfo = null;
   constructor() {
-    let loginKey:string = localStorage.getItem("siteLoginKey");
-    if(!loginKey)
-    {
+    let loginKey: string = localStorage.getItem("siteLoginKey");
+    if (!loginKey) {
       loginKey = this.__DEFAULT_LOGIN_KEY;
     }
 
@@ -23,7 +22,7 @@ export class LoginServiceService {
   public tryLoginUser(User: UserInputInfo) {
     switch (this._currentLoginStrategy) {
       case LoginStrategies.LocalStorageFlow: {
-        this.loginWithLocalStorage(User.login);
+        this.loginWithLocalStorage(User);
         break;
       }
       case LoginStrategies.NormalFlow: {
@@ -32,26 +31,32 @@ export class LoginServiceService {
     }
   }
 
-  public logOut()
-  {
+  public logOut() {
     localStorage.setItem("siteLoginKey", this.__DEFAULT_LOGIN_KEY);
     this._loginData = new LoggedInData(this.__DEFAULT_LOGIN_KEY)
   }
 
-  private loginWithLocalStorage(loginKey:string):void
-  {
-    localStorage.setItem("siteLoginKey", loginKey);
-    localStorage.setItem("siteLoginKey", loginKey);
-    this._loginData = new LoggedInData(loginKey);
+  private loginWithLocalStorage(user: UserInputInfo): void {
+    localStorage.setItem("siteLoginKey", user.login);
+    this.setCurrentUser(user);
+    this._loginData = new LoggedInData(user.login);
   }
 
-  public get isLoggedIn(): boolean
-  {
+  private setCurrentUser(user: UserInputInfo){
+    localStorage.setItem("users_" + user.login, JSON.stringify(user));
+    this._currentUser = user;
+  }
+
+  public getCurrentUser() {
+    this._currentUser = <UserInputInfo>JSON.parse(localStorage.getItem("users_" + this._loginData.loginKey));
+    return this._currentUser;
+  }
+
+  public get isLoggedIn(): boolean {
     return this._loginData.loginKey != this.__DEFAULT_LOGIN_KEY;
   }
 
-  public get loginData():LoggedInData
-  {
+  public get loginData(): LoggedInData {
     return this._loginData;
   }
 }
