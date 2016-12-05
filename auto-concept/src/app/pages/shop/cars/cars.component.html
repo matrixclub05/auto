@@ -1,3 +1,37 @@
-<p>
-  cars works!
-</p>
+<div class="container">
+  <div class="col-md-3" style="background-color: #0e94d8">
+    <div>
+      <label>Engine types</label>
+      <div *ngFor="let type of carEngineTypes"><input type="radio" id="{{type}}" name="engineType" value="{{type}}"
+                                                      [(ngModel)]="_selectedEngineType" (ngModelChange)="createCarForDisplay()">
+        <label for="{{type}}">{{type}}</label></div>
+    </div>
+    <div>
+      <label>Engine Capacity</label>
+      <div *ngFor="let capa of carEngineCapacity"><input type="radio" id="{{capa}}" name="engineCapacity" value="{{capa}}"
+                                                         [(ngModel)]="_selectedEngineCapacity" (ngModelChange)="createCarForDisplay()">
+        <label for="{{capa}}">{{capa}}</label>
+      </div>
+    </div>
+    <div>
+      <label>Transmission Type</label>
+      <div *ngFor="let trans of transmissionTypes"><input type="radio" id="{{trans}}" name="selectedTransmissionType" value="{{trans}}"
+                                                          [(ngModel)]="_selectedTransmissionTypes" (ngModelChange)="createCarForDisplay()">
+        <label for="{{trans}}">{{trans}}</label>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-md-9"  style="background-color: #9d9d9d">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let item of _carsToDisplay">
+        <div>{{item.name}}</div>
+        <div>{{item.engineCapacity}}</div>
+        <div>{{item.engineType}}</div>
+        <div>{{item.transmissionType}}</div>
+        <!--<img src="{{item.photo}}" width="100%"/>-->
+        <img src="assets/default-car-image.jpg" width="100%"/>
+      </div>
+    </div>
+  </div>
+</div>
