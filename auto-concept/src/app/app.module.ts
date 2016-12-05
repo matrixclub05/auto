@@ -37,6 +37,9 @@ import { AboutComponent } from './pages/about/about.component';
 import { PersonalComponent } from './pages/profile/personal/personal.component';
 import { ServiceComponent } from './pages/service/service.component';
 import {CarsComponent} from "./pages/shop/cars/cars.component";
+import {MachinesComponent} from "./pages/shop/machines/machines.component";
+import {PartsComponent} from "./pages/shop/parts/parts.component";
+import {GoodsComponent} from "./pages/shop/goods/goods.component";
 
 
 @NgModule({
@@ -64,6 +67,9 @@ import {CarsComponent} from "./pages/shop/cars/cars.component";
     ServiceBookComponent,
     CarsSelectorComponent,
     CarsComponent,
+    MachinesComponent,
+    PartsComponent,
+    GoodsComponent,
     StoreServicesComponent,
     RolloverBtnComponent,
     SignUpForServiceComponent,

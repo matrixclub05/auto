@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {LoggedInData} from "./data-objects/LoggedInData";
 import {LoginStrategies} from "./data-objects/LoginStategies";
+import {UserInputInfo} from "../registration/registrationFlow/registration-flow.component";
 
 @Injectable()
 export class LoginServiceService {
@@ -19,10 +20,10 @@ export class LoginServiceService {
     this._loginData = new LoggedInData(loginKey)
   }
 
-  public tryLoginUser(emailOrUserName: string, password: string) {
+  public tryLoginUser(User: UserInputInfo) {
     switch (this._currentLoginStrategy) {
       case LoginStrategies.LocalStorageFlow: {
-        this.loginWithLocalStorage(emailOrUserName);
+        this.loginWithLocalStorage(User.login);
         break;
       }
       case LoginStrategies.NormalFlow: {
@@ -39,6 +40,7 @@ export class LoginServiceService {
 
   private loginWithLocalStorage(loginKey:string):void
   {
+    localStorage.setItem("siteLoginKey", loginKey);
     localStorage.setItem("siteLoginKey", loginKey);
     this._loginData = new LoggedInData(loginKey);
   }
