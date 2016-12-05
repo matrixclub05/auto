@@ -4,7 +4,7 @@ import {FormsModule} from "@angular/forms";
 import {HttpModule} from "@angular/http";
 import {AppComponent} from "./app.component";
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
-import {ShopComponent} from "./shop/shop.component";
+import {ShopComponent} from "./pages/shop/shop.component";
 import {RegistrationComponent} from "./registration/moduleView/registration.component";
 import {AppRoutingModule} from "./app-routing.module";
 import {RegistrationModule} from "./registration/registration.module";
@@ -35,6 +35,7 @@ import { RolloverBtnComponent } from './components/rollover-btn/rollover-btn.com
 import {SignUpForServiceComponent} from "./garage/sign-up-for-service/sign-up-for-service.component";
 import { AboutComponent } from './pages/about/about.component';
 import { PersonalComponent } from './pages/profile/personal/personal.component';
+import { ServiceComponent } from './pages/service/service.component';
 
 
 @NgModule({
@@ -65,7 +66,8 @@ import { PersonalComponent } from './pages/profile/personal/personal.component';
     RolloverBtnComponent,
     SignUpForServiceComponent,
     AboutComponent,
-    PersonalComponent
+    PersonalComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,
