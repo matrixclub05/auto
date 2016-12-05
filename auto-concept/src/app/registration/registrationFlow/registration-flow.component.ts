@@ -32,7 +32,10 @@ export class RegistrationFlowComponent {
   protected buttonClick() {
     this._currentModal.close('Close click');
   }
-
+  protected registerUser(): void {
+    this._loginService.tryLoginUser(this._userInputInfo);
+    this._currentModal.close();
+  }
   protected logUserIn(): void {
     this._loginService.tryLoginUser(this._userInputInfo);
     this._currentModal.close();

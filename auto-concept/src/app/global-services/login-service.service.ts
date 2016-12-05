@@ -14,6 +14,8 @@ export class LoginServiceService {
     let loginKey: string = localStorage.getItem("siteLoginKey");
     if (!loginKey) {
       loginKey = this.__DEFAULT_LOGIN_KEY;
+    }else{
+      this._currentUser = <UserInputInfo>localStorage.getItem("users_" + loginKey);
     }
 
     this._loginData = new LoggedInData(loginKey)
