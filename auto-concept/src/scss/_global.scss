@@ -75,21 +75,40 @@ app-root {
 }
 
 .breadcrumbs {
+  position: relative;
+  z-index: 1;
   li {
     display: inline-block;
-    padding: 0 10px;
+    padding: 10px;
 
   }
   .row {
     height: 100%;
   }
   .sub-menu {
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
     display: block;
     position: absolute;
-    left: 0;
+    left: 25px;
+    padding: 0;
     background: #fff;
-    &>li>a{
-
+    transition: all .5s;
+    &>li{
+      display: block;
+      padding: 15px 10px;
+      &>a {
+        white-space: nowrap;
+      }
+    }
+  }
+  .nav-item:hover {
+    .sub-menu {
+      visibility: visible;
+      padding: 10px;
+      height: auto;
+      transition: all .5s;
     }
   }
   .nav-link{
