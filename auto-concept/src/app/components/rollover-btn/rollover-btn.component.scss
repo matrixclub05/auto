@@ -9,6 +9,7 @@
   width: 100%;
   position: relative;
 
+
   &:after{
     content: '';
     clear: both;
@@ -55,6 +56,8 @@
 
 :host{
   display: block;
+  position: relative;
+  z-index: 0;
   &.small {
     .rollover {
       border-width: 2px;

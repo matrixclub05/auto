@@ -1,14 +1,23 @@
 <section class="container top">
   <div class="breadcrumbs">
     <div class="row vertical-align">
-      <nav class="col-lg-9 vertical-align">
+      <nav class="col-sm-7 vertical-align">
         <ul class="nav">
           <li class="nav-item">
             <a class="nav-link" [routerLink]="['/profile/car-store']" href="">Автомобили</a>
             <ul class="sub-menu">
               <li>
                 <a [routerLink]="['/profile/car-store']">
-                  <i class="fa fa-fw fa-ambulance"></i>
+                Легковые
+                </a>
+              </li>
+              <li>
+                <a [routerLink]="['/profile/car-store']">
+                Спецтехника
+                </a>
+              </li>
+              <li>
+                <a [routerLink]="['/profile/car-store']">
                 Подобрать авто
                 </a>
               </li>
@@ -23,12 +32,9 @@
           <li>
             <a class="nav-link" href="javascript:void(0)">Товары</a>
           </li>
-          <li>
-            <a class="nav-link" href="javascript:void(0)" [routerLink]="['/profile/personal']">Личные данные</a>
-          </li>
         </ul>
       </nav>
-      <h1 class="col-lg-3 vertical-align">Гараж</h1>
+      <h1 class="col-sm-5 vertical-align">Салон-магазин</h1>
     </div>
   </div>
 
@@ -40,8 +46,8 @@
 
 <div class="container">
   <div class="row">
-    <app-categories class="col-lg-9"></app-categories>
-    <div class="col-lg-3">
+    <app-categories class="col-sm-9"></app-categories>
+    <div class="col-sm-3">
       <img src="assets/ads_black.jpg" alt="" width="100%">
       <img src="assets/vestaxray.jpg" alt="" width="100%">
     </div>
