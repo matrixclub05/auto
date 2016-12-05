@@ -12,11 +12,11 @@ export class CarsComponent implements OnInit, AfterViewInit {
   protected carEngineCapacity = ['2.0', '1.8', '1.6', '2.0T', '3.0T'];
   protected transmissionTypes = ['МКПП', "АКПП" ];
 
-  protected _selectedEngineType:string = this.carEngineTypes[0];
-  protected _selectedEngineCapacity:string = this.carEngineCapacity[0];
-  protected _selectedTransmissionTypes:string = this.transmissionTypes[0];
+  protected _selectedEngineType:{} = {'Дизельный':false, "Бензиновый":false, 'LPG':false};
+  protected _selectedEngineCapacity:{} = {'2.0':false, '1.8':false, '1.6':false, '2.0T':false, '3.0T':false};
+  protected _selectedTransmissionTypes:{} = {'МКПП':false, "АКПП":false};
 
-  protected page;
+  protected _filterCarName:string = "";
 
   private _carList:Array<CarShopSingleCar> = [];
 
@@ -35,6 +35,11 @@ export class CarsComponent implements OnInit, AfterViewInit {
     }
 
     this.shuffle(this._carList);
+  }
+
+  protected onCarFilter($event)
+  {
+    this._filterCarName = $event.target.value.toLowerCase();
     this.createCarForDisplay();
   }
 
@@ -44,11 +49,21 @@ export class CarsComponent implements OnInit, AfterViewInit {
     for(var i = 0; i < this._carList.length; i++)
     {
       let car = this._carList[i];
-      if(car.engineCapacity == this._selectedEngineCapacity &&
-            car.engineType == this._selectedEngineType &&
-              car.transmissionType == this._selectedTransmissionTypes)
+      if(this._selectedEngineCapacity[car.engineCapacity] &&
+             this._selectedEngineType[car.engineType] &&
+               this._selectedTransmissionTypes[car.transmissionType])
       {
-        this._carsToDisplay.push(car);
+        if(this._filterCarName.length > 0)
+        {
+          if(car.name.toLowerCase().indexOf(this._filterCarName) > -1)
+          {
+            this._carsToDisplay.push(car);
+          }
+        }
+        else
+        {
+          this._carsToDisplay.push(car);
+        }
       }
     }
   }
@@ -85,9 +100,10 @@ export class CarsComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit()
   {
-  /*  this._selectedEngineType = this.carEngineTypes[0];
-    this._selectedEngineCapacity = this.carEngineCapacity[0];
-    this._selectedTransmissionTypes = this.transmissionTypes[0];*/
+    this._selectedEngineType[this.carEngineTypes[0]] = true;
+    this._selectedEngineCapacity[this.carEngineCapacity[0]] = true;
+    this._selectedTransmissionTypes[this.transmissionTypes[0]] = true;
+    this.createCarForDisplay();
   }
 
 }

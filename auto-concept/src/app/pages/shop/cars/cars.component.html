@@ -1,30 +1,39 @@
 <div class="container">
-  <div class="col-md-3" style="background-color: #0e94d8">
-    <div>
-      <label>Engine types</label>
-      <div *ngFor="let type of carEngineTypes"><input type="radio" id="{{type}}" name="engineType" value="{{type}}"
-                                                      [(ngModel)]="_selectedEngineType" (ngModelChange)="createCarForDisplay()">
-        <label for="{{type}}">{{type}}</label></div>
-    </div>
-    <div>
-      <label>Engine Capacity</label>
-      <div *ngFor="let capa of carEngineCapacity"><input type="radio" id="{{capa}}" name="engineCapacity" value="{{capa}}"
-                                                         [(ngModel)]="_selectedEngineCapacity" (ngModelChange)="createCarForDisplay()">
-        <label for="{{capa}}">{{capa}}</label>
+  <div class="col-xs-12"><input class="form-control" type="text" placeholder="Введите название или марку автомобиля" (input)="onCarFilter($event)"/></div>
+  <div class="col-md-3 list-group">
+    <div class="list-group-item">
+      <label class="control-label">Engine types</label>
+      <div *ngFor="let type of carEngineTypes;">
+        <label for="{{type}}">
+          <input class="checkbox" type="checkbox" id="{{type}}" name="engineType" value="{{type}}"
+                                        [(ngModel)]="_selectedEngineType[type]" (ngModelChange)="createCarForDisplay()">
+          {{type}}
+        </label>
       </div>
     </div>
-    <div>
+    <div class="list-group-item">
+      <label>Engine Capacity</label>
+      <div *ngFor="let capa of carEngineCapacity">
+        <label for="{{capa}}">
+          <input class="checkbox" type="checkbox" id="{{capa}}" name="engineCapacity" value="{{capa}}"
+                                       [(ngModel)]="_selectedEngineCapacity[capa]" (ngModelChange)="createCarForDisplay()">
+        {{capa}}
+        </label>
+      </div>
+    </div>
+    <div class="list-group-item">
       <label>Transmission Type</label>
-      <div *ngFor="let trans of transmissionTypes"><input type="radio" id="{{trans}}" name="selectedTransmissionType" value="{{trans}}"
-                                                          [(ngModel)]="_selectedTransmissionTypes" (ngModelChange)="createCarForDisplay()">
-        <label for="{{trans}}">{{trans}}</label>
+      <div *ngFor="let trans of transmissionTypes">
+        <input class="checkbox" type="checkbox" id="{{trans}}" name="selectedTransmissionType"  value="{{trans}}"
+                                      [(ngModel)]="_selectedTransmissionTypes[trans]" (ngModelChange)="createCarForDisplay()">
+        <label class="control-label" for="{{trans}}">{{trans}}</label>
       </div>
     </div>
 
   </div>
-  <div class="col-md-9"  style="background-color: #9d9d9d">
-    <div class="row">
-      <div class="col-md-4" *ngFor="let item of _carsToDisplay">
+  <div class="col-md-9 list-group">
+    <div class="row" *ngIf="_carsToDisplay.length > 0">
+      <div class="col-md-4 list-group-item" *ngFor="let item of _carsToDisplay">
         <div>{{item.name}}</div>
         <div>{{item.engineCapacity}}</div>
         <div>{{item.engineType}}</div>
@@ -32,6 +41,10 @@
         <!--<img src="{{item.photo}}" width="100%"/>-->
         <img src="assets/default-car-image.jpg" width="100%"/>
       </div>
+    </div>
+    <div *ngIf="_carsToDisplay.length == 0">
+      <p>Ни одна из машин не совпадает с выюраными критериями</p>
+      <p>Пожалуйста измените критерии поиска</p>
     </div>
   </div>
 </div>
