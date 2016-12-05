@@ -8,6 +8,7 @@
   border: 3px solid #000;
   width: 100%;
   position: relative;
+
   &:after{
     content: '';
     clear: both;
@@ -48,6 +49,7 @@
     transition: transform 0.3s;
     transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
     font-weight: bold;
+    padding: 0 15px;
   }
 }
 
@@ -56,6 +58,7 @@
   &.small {
     .rollover {
       border-width: 2px;
+      margin: 10px 0;
     }
     span {
       font-weight: normal;
