@@ -14,6 +14,8 @@ export class LoginServiceService {
     let loginKey: string = localStorage.getItem("siteLoginKey");
     if (!loginKey) {
       loginKey = this.__DEFAULT_LOGIN_KEY;
+    }else{
+      this._currentUser = <UserInputInfo>(localStorage.getItem("users_" + loginKey) || new UserInputInfo());
     }
 
     this._loginData = new LoggedInData(loginKey)
@@ -43,8 +45,14 @@ export class LoginServiceService {
   }
 
   private setCurrentUser(user: UserInputInfo){
-    localStorage.setItem("users_" + user.login, JSON.stringify(user));
-    this._currentUser = user;
+    let cu = this.getCurrentUser();
+    if(cu && cu.login){
+      this._currentUser = cu;
+    }else {
+      localStorage.setItem("users_" + user.login, JSON.stringify(user));
+      this._currentUser = user;
+    }
+
   }
 
   public getCurrentUser() {
