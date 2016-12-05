@@ -68,6 +68,11 @@ export class CarsComponent implements OnInit, AfterViewInit {
     }
   }
 
+  protected haveARide(car:CarShopSingleCar)
+  {
+    alert(JSON.stringify(car));
+  }
+
   protected shuffle(a)
   {
     var j, x, i;
