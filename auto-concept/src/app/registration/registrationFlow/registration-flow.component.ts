@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 import {LoginServiceService} from "../../global-services/login-service.service";
 
@@ -7,59 +7,57 @@ import {LoginServiceService} from "../../global-services/login-service.service";
   templateUrl: 'registration-flow.component.html',
   styleUrls: ['registration-flow.component.scss']
 })
-export class RegistrationFlowComponent{
+export class RegistrationFlowComponent {
 
-  public isLogin:boolean = false;
+  public isLogin: boolean = false;
 
   private RegistrationStatesEnum = RegistrationStates;
-  private _currentRegistrationState:RegistrationStates = RegistrationStates.LOGIN;
+  private _currentRegistrationState: RegistrationStates = RegistrationStates.LOGIN;
 
-  private _userInputInfo:UserInputInfo = new UserInputInfo();
+  private _userInputInfo: UserInputInfo = new UserInputInfo();
 
-  constructor(public _currentModal: NgbActiveModal, private _loginService:LoginServiceService) {}
+  constructor(public _currentModal: NgbActiveModal, private _loginService: LoginServiceService) {
+  }
 
   ngOnInit() {
-    if(!this.isLogin)
-    {
+    if (!this.isLogin) {
       this._currentRegistrationState = RegistrationStates.REGISTER;
     }
   }
 
-  protected cancel()
-  {
+  protected cancel() {
     this._currentModal.dismiss('Cross click')
   }
 
-  protected buttonClick()
-  {
+  protected buttonClick() {
     this._currentModal.close('Close click');
   }
-
-  protected logUserIn():void
-  {
+  protected registerUser(): void {
+    this._loginService.tryLoginUser(this._userInputInfo);
+    this._currentModal.close();
+  }
+  protected logUserIn(): void {
     this._loginService.tryLoginUser(this._userInputInfo);
     this._currentModal.close();
   }
 
-  protected get canLogin():boolean
-  {
+  protected get canLogin(): boolean {
     return (this._userInputInfo.login != "" && this._userInputInfo.password != "");
   }
 
-  protected changeRegistrationStateTo(state:RegistrationStates)
-  {
+  protected changeRegistrationStateTo(state: RegistrationStates) {
     this._currentRegistrationState = state;
   }
 
 }
 
-export class UserInputInfo
-{
-  public login:string = "";
+export class UserInputInfo {
+  public login: string = "";
   public firstName: string = "";
   public lastName: string = "";
   public middleName: string = "";
-  public password:string = "";
+  public password: string = "";
+  public phoneNumber: string = ""
 }
 
 enum RegistrationStates

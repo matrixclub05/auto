@@ -1,6 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
-import {RegistrationFlowComponent} from "../../registration/registrationFlow/registration-flow.component";
+import {
+  RegistrationFlowComponent,
+  UserInputInfo
+} from "../../registration/registrationFlow/registration-flow.component";
 import {LoginServiceService} from "../../global-services/login-service.service";
 
 @Component({
@@ -10,10 +13,18 @@ import {LoginServiceService} from "../../global-services/login-service.service";
 })
 export class HeaderComponent implements OnInit {
 
+  private _currentUser: UserInputInfo;
+
   constructor(private _modalService: NgbModal, private _loginService:LoginServiceService) {
   }
 
   ngOnInit() {
+    let user = this._loginService.getCurrentUser();
+    if(user) {
+      this._currentUser = user;
+    }else{
+      this._currentUser = new UserInputInfo();
+    }
   }
 
   public openRegistrationModal(param: boolean) {
