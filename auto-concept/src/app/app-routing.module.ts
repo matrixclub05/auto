@@ -6,6 +6,8 @@ import {CarStoreComponent} from "./pages/profile/car-store/car-store.component";
 import {StartComponent} from "./pages/profile/start/start.component";
 import {AboutComponent} from "./pages/about/about.component";
 import {PersonalComponent} from "./pages/profile/personal/personal.component";
+import {ShopComponent} from "./pages/shop/shop.component";
+import {ServiceComponent} from "./pages/service/service.component";
 
 const appRoutes: Routes = [
   {
@@ -28,7 +30,11 @@ const appRoutes: Routes = [
   },
 
   { path: '', component: MainComponent },
-  { path: 'about', component: AboutComponent }
+  { path: 'about', component: AboutComponent },
+  { path: 'shop', component: ShopComponent },
+  { path: 'service', component: ServiceComponent },
+
+
 
 ];
 @NgModule({
