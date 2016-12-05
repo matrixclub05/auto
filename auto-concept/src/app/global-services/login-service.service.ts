@@ -45,8 +45,14 @@ export class LoginServiceService {
   }
 
   private setCurrentUser(user: UserInputInfo){
-    localStorage.setItem("users_" + user.login, JSON.stringify(user));
-    this._currentUser = user;
+    let cu = this.getCurrentUser();
+    if(cu && cu.login){
+      this._currentUser = cu;
+    }else {
+      localStorage.setItem("users_" + user.login, JSON.stringify(user));
+      this._currentUser = user;
+    }
+
   }
 
   public getCurrentUser() {
