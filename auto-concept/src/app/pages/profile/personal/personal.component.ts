@@ -25,4 +25,8 @@ export class PersonalComponent implements OnInit {
     }
   }
 
+  private updateUser(){
+    this._loginService.updateUser(this.user);
+  }
+
 }

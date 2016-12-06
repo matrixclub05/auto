@@ -1,3 +1,11 @@
+:host {
+  display: block;
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+}
 .vehicle-guide-form
 {
   padding: 1.5rem;

@@ -46,8 +46,10 @@ export class LoginServiceService {
   private getUserById(id){
     return this._currentUser = <UserInputInfo>JSON.parse(localStorage.getItem("users_" + id));
   }
-
-  private setCurrentUser(user: UserInputInfo){
+  public updateUser(user: UserInputInfo){
+    localStorage.setItem("users_" + user.login, JSON.stringify(user));
+  }
+  public setCurrentUser(user: UserInputInfo){
     let cu = this.getUserById(user.login);
 
     if(cu && cu.login){

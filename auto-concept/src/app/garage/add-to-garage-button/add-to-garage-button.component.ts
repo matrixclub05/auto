@@ -16,7 +16,7 @@ export class AddToGarageButtonComponent implements OnInit {
 
   protected openAddCar()
   {
-    const modalRef:NgbModalRef = this._modalService.open(GarageComponent, {size:'lg'});
+    const modalRef:NgbModalRef = this._modalService.open(GarageComponent, {size:'lg', windowClass: 'add-to-garage'});
     modalRef.componentInstance.modalRef = modalRef;
   }
 }
